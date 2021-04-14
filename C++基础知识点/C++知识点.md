@@ -244,13 +244,18 @@
     + printf 是变参函数，没有类型检查，不安全；cout 是通过运算符重载实现的，较为安全；
     + printf 只能输入基本数据类型，cout 可以通过重载函数的方式去实现自定义类的输出；
 
+---
+
 ## ifdef、endif 代表着什么？
     + ifdef、endif 实现了条件编译的需求；
     + 使用 #define、#ifndef、#ifdef、#endif 避免头文件的重定义
 
+---
 
-
-+ strcpy 和 memcpy 的区别？
+## strcpy 和 memcpy 的区别？
+    + 复制内容不同。strcpy 只能复制字符串，而 memcpy 可以复制任意内容，例如字符数组、整型、结构体、类；
+    + 复制的方法不同。strcpy 不需要指定长度，它遇到'\0'时自动结束，容易产生溢出；而 memcpy 根据第三个参数决定复制的长度；
+    + 用途不同。复制字符串时一般使用 strcpy，复制其他类型时使用 memcpy；
 
 + 程序在执行 int main(int argc, char *argv[]) 时的内存结构？
 
