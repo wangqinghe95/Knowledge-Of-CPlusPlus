@@ -249,7 +249,7 @@
 ## ifdef、endif 代表着什么？
     + ifdef、endif 实现了条件编译的需求；
     + 使用 #define、#ifndef、#ifdef、#endif 避免头文件的重定义
-
+    
 ---
 
 ## strcpy 和 memcpy 的区别？
@@ -257,9 +257,16 @@
     + 复制的方法不同。strcpy 不需要指定长度，它遇到'\0'时自动结束，容易产生溢出；而 memcpy 根据第三个参数决定复制的长度；
     + 用途不同。复制字符串时一般使用 strcpy，复制其他类型时使用 memcpy；
 
-+ 程序在执行 int main(int argc, char *argv[]) 时的内存结构？
+---
 
-+ const char* 和 string 之间是什么关系？
+## 程序在执行 int main(int argc, char *argv[]) 时的内存结构？
+    参数的含义是程序在命令行下运行时，需要输入 argc 个参数，每个参数都是 char 类型输入，依次存 argv[[] 在数组中，所有参数在指针 char* 指向的内存中，数组中元素个数是 argc 个，第一个参数为程序的名称
+
+---
+
+# const char* 和 string 之间是什么关系？
+    + string 是 C++ 标准库，封装了对字符串的操作，const char* 是一个指向字符常量的指针。
+    + 其中 char* 、const char* 和 string 可以相互转化
 
 + 如何快速定位错误出现的地方？
 
