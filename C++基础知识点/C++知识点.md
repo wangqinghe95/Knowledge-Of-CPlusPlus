@@ -264,18 +264,29 @@
 
 ---
 
-# const char* 和 string 之间是什么关系？
+## const char* 和 string 之间是什么关系？
     + string 是 C++ 标准库，封装了对字符串的操作，const char* 是一个指向字符常量的指针。
     + 其中 char* 、const char* 和 string 可以相互转化
 
 ---
 
-# strcpy、sprintf、memcpy 这三个函数的不同之处？
+## strcpy、sprintf、memcpy 这三个函数的不同之处？
     + 操作对象不同：stcpy的两个操作对象是字符串；sprintf 操作源可以是多种数据类型，目的操作对象是字符串；memcpy的两个对象
 
-+ Debug 和 release 的区别？
+---
 
-+ main 函数的返回值有什么考究之处的？
+## Debug 和 release 的区别？
+    + Debug(调试版本)，包含调试信息，容量要比 release 大，没有进行优化，生成文件除了 .exe 或者 .dll 外还有一个 .pdb，该文件记录了代码中断点等调试信息；
+    + Release（发布版本）：编译时对应用程序进行优化，使代码在运行速度和代码大小上都是最优的。不生成 .pdb 文件
+    + 实际上，Debug 和 Release 没有本质的区别，它们只是一组编译选项的集合，编译器只是按照预定的选项行动。实际上我们也可以对这些选项进行修改，从而得到优化后的调试版本或者带有跟踪语句的发布版本；
+
+---
+
+## main 函数的返回值有什么考究之处的？
+    + 程序运行过程入口点 main 函数，即 main() 函数返回值类型返回值必须是 int，这样返回值才能传递给激活者(如操作系统)表示程序正常退出；
+    + main(int args, char **argv) 参数的传递一般使用 getopt() 函数去处理；
+
+---
 
 + strcpy 函数和 strncpy 函数的区别？哪个更安全？
 
