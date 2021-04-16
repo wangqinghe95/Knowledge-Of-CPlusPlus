@@ -45,3 +45,6 @@ const char * cpc = pc;
           转 string 初始化、赋值皆可
     const char* 转 char* 需要拷贝过去
                 转 string 初始化、赋值皆可
+    string 转 char* 需要拷贝数据
+           转 const char *  转成 char* 后直接赋值
+

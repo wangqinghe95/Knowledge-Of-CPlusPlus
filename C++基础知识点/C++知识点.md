@@ -268,9 +268,10 @@
     + string 是 C++ 标准库，封装了对字符串的操作，const char* 是一个指向字符常量的指针。
     + 其中 char* 、const char* 和 string 可以相互转化
 
-+ 如何快速定位错误出现的地方？
+---
 
-+ strcpy、sprintf、memcpy 这三个函数的不同之处？
+# strcpy、sprintf、memcpy 这三个函数的不同之处？
+    + 操作对象不同：stcpy的两个操作对象是字符串；sprintf 操作源可以是多种数据类型，目的操作对象是字符串；memcpy的两个对象
 
 + Debug 和 release 的区别？
 
