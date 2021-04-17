@@ -45,3 +45,26 @@ void *myMemcpy(void *dest, const void *src, size_t size){
     return dest;
 }
 ```
+
+## strncpy
+
+```
+char* strncpy(char* dest, const char* source, size_t count){
+    if (NULL == dest || NULL == source || count <= 0){
+        return NULL;
+    }
+
+    char *start = dest;
+    while (count && (*dest++ = *source++)){
+        count--;
+    }
+
+    if (count){
+        while(--count){
+            *dest ++ = '\0';
+        }
+    }
+
+    return (start);
+}
+```
