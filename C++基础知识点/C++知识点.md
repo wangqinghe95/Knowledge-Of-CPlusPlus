@@ -356,15 +356,24 @@
     理论上来说是可以的，但是由于 malloc/free 操作对象都是明确大小的，而且是不能用在动态类上，与此同时 new 和 delete 会自动进行类型检查和大小，malloc/free 不能执行构造函数和析构函数，所以不建议使用 delete 去释放 malloc 分配的空间，因为这样不能保证每个 C++ 程序运行时都正常；
 
 ## delete 和 delete [] 的区别？（delete、delete []、alloctor 有什么作用？）
-    + delete 和 delete[] 的区别主要是在于对非内部数据对象的处理上，delete 只能调用一次非内部数据对象的析构函数，而 delete[] 会调用数组的每一个成员的析构函数；
-    + new 的机制是将内存分配和对象构造组合在一起，delete 也是将对象的析构函数和内存释放组合在一起了，allocator 是将这两部分分开了，allocator 申请一部分内存，但是不进行初始化，只有当需要的时候才进行初始化操作；
++ delete 和 delete[] 的区别主要是在于对非内部数据对象的处理上，delete 只能调用一次非内部数据对象的析构函数，而 delete[] 会调用数组的每一个成员的析构函数；
++ new 的机制是将内存分配和对象构造组合在一起，delete 也是将对象的析构函数和内存释放组合在一起了，allocator 是将这两部分分开了，allocator 申请一部分内存，但是不进行初始化，只有当需要的时候才进行初始化操作；
 
 ## C++ 有几种类型的 new？
++ palin new:最常用的 new 函数，申请空间失败抛出异常
++ nothrow new：申请失败返回 NULL
++ placement new：在一块已经开辟的空间上构造对象，需要显示的调用析沟函数去销毁，不能使用 delete，否则可能会造成内存泄漏或者运行错误
 
-+ c++ 中 NULL 和 nullptr 的区别？
+---
 
-+ C++ 中 struct 和 class 的区别？ C 中 struct 和 C++ struct 的区别？
+## c++ 中 NULL 和 nullptr 的区别？
++ NULL 是宏定义，而 nullptr 是关键字；
++ C 语言中的 NULL 被定义为 (void*)0, C++ 中 NULL 被定义为 0；所以在传入 NULL 参数时会把 NULL 当作整数零来看待，为了和调用参数时指针函数区分开，引入 nullptr
++ nullptr 可以明确的区分整型和指针类型，根据环境自动的转换成相应的指针类型，但不会被转换成任何整形，所以不会造成参数传递错误；
 
+## C++ 中 struct 和 class 的区别？ C 中 struct 和 C++ struct 的区别？
+    C++ 的 struct 和 calss 的主要区别是成员默认权限不同，struct 默认公有的，class 默认私有的；
+    
 + final 和 override 关键字？
 
 + 值传递、指针传递、引用传递的区别和效率？
