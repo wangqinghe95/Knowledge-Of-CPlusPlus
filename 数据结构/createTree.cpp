@@ -14,7 +14,7 @@ TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-
+//先序中序建树
 TreeNode* createTree(vector<int> &pre, int preL, int preR, vector<int> &in, int inL, int inR){
     if (preL > preR){
         return nullptr;
@@ -37,4 +37,30 @@ TreeNode* createTree(vector<int> &pre, int preL, int preR, vector<int> &in, int 
 }
 TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
     return createTree(preorder, 0, preorder.size()-1, inorder, 0, inorder.size() - 1);
+}
+
+//中序后序建树
+TreeNode* createTree(vector<int>&in, int inL, int inR, vector<int>& post, int postL, int postR)
+{
+    if (postL > postR){
+        return nullptr;
+    }
+    TreeNode* root = new TreeNode;
+    root->val = post[postR];
+
+    int k = inL;
+    for (; k <= inR; k++){
+        if (post[postR] == in[k]){
+            break;
+        }
+    }
+
+    int numLeft = k - inL;
+    root->left = createTree(in, inL, inL+numLeft, post, postL, postL+numLeft-1);
+    root->right = createTree(in, k+1, inR, post, postL+numLeft, postR-1);
+    
+    return root;
+}
+TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+    return createTree(inorder, 0, inorder.size()-1, postorder, 0, postorder.size()-1);
 }
