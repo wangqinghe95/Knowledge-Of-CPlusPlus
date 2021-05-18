@@ -35,6 +35,20 @@
 
 ---
 
-# gdb 调试
+# gdb 调试:[多线程调试经验](https://blog.csdn.net/zhangye3017/article/details/80382496)
++ 调试线程：gdb attach + 主线程ID
++ 查看线程信息：info threads
++ 查看线程栈结构：bt
++ 切换线程：thread n（n 代表第几个线程）
 
 # vim 搜索、替换
++ 查找
+    - /text 查找 text，n键查找下一个，N查找前一个
+    - ？text 反向查找下一个
+    - /^hello 查找行首的 hello
+    - /world$   查找行尾的world
++ 替换
+    - s/old/new 使用 old 替换 new，替换当前行的第一个匹配；
+    - s/old/new/g   使用 old 替换 new，替换当前行的所有匹配；
+    - %s/old/new/   使用 old 替换 new，替换所有行的第一个匹配；
+    - %s/old/new/g  使用 old 替换 new， 替换整个文件的所有匹配；
