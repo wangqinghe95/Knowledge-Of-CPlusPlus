@@ -52,3 +52,7 @@
     - s/old/new/g   使用 old 替换 new，替换当前行的所有匹配；
     - %s/old/new/   使用 old 替换 new，替换所有行的第一个匹配；
     - %s/old/new/g  使用 old 替换 new， 替换整个文件的所有匹配；
+
+# 常用命令
+1. netstat：显示TCP、IP、UDP、ICMP 协议相关的统计数量
+2. tcpdump：截取网络分组，并输出分组内容的工具。
