@@ -1,5 +1,7 @@
 # C++ 左值引用和右值引用
 
+[左值右值](https://zhuanlan.zhihu.com/p/137662465)
+
 ```
 #include<iostream>
 using namespace std;
