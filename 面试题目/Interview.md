@@ -46,10 +46,96 @@
 ---
 
 7. 多态是如何实现的？
+	1. C++ 编译器为每个含有虚函数的类提供一个虚函数表，虚表用来记录虚函数地址，即虚表中的指针指向虚函数地址。当子类重写父类的虚函数时，子类继承的虚函数表地址相应位置会被修改为子类的虚函数地址。这样父类指针就可以调用子类重写的虚函数，从而实现多态。
+
+---
+
 8、编程实现一个单例模式
-9、一个对象只有一个int型成员变量，sizeof的大小是多少？
-10、一个对象有一个int型和一个char型成员变量，sizeof的大小是多少？
-11、一个对象只有一个int型成员变量和一个虚函数，sizeof的大小是多少？
++ 单例要点：
+	1. 全局只有一个实例，static特性，并且禁止用户自己声明并且定义实例（把构造函数设定为private）；
+	2. 线程安全；
+	3. 禁止赋值和拷贝；
+	4. 用户通过接口获取实例；
+
++ 懒汉模式：直到使用才实例化，不被调用就不会被占内存；缺点是线程安全和内存泄漏。
+```
+class Singleton 
+{
+private:
+	Singleton();
+	Singleton(Singleton&)=delete;
+	Singleton(const Singleton&)=delete;
+	static Single* m_instance_ptr;
+public:
+	~Singleton();
+	static Singleton* get_instance() {
+		if (m_instance_ptr == nullptr) {
+			m_instance_ptr = new Singleton;
+		}
+		return m_instance_ptr;
+	}
+};
+
+Singleton* Singleton::m_instance_ptr = nullptr;
+
+```
+
++ 加锁和共享指针版懒汉模式：缺点是使用智能锁需要调用者也要用到智能锁；加锁耗费资源，代码量增多。
+```
+class Singleton
+{
+public:
+	typedef std::shared_ptr<Singleton> Ptr;
+	// 同上
+	...
+	static Singleton* get_instance() {
+		if (m_instance_ptr == nullptr) {
+			std::lock_guard<std::mutex> lk(m_mutex);
+			if (m_instance_ptr == nullptr) {
+				m_instance_ptr = std::shared_ptr<Singleton>(new Singleton);
+			}
+		}
+		return m_singleton_ptr;
+	}
+private:
+	// 同上
+	...
+	static Ptr m_instance_ptr;
+	static std::mutex m_mutex;
+}
+```
+
++ 局部静态变量版：
+
+class Singleton
+{
+public:
+	static Singleton& get_instance() {
+		static Singleton instance;
+		return instance;
+	}
+}
+
+---
+
+9. 影响C++对象大小的因素
+	+ 所有非静态成员变量的大小
+	+ 字节对齐和字节填充
+	+ 虚函数指针
+	+ 派生类继承的基类数据的数据成员
+
+注：空类（无静态数据成员）对象大小为1，当作为基类时，大小为0.
+
+问题：（64bit）
++	Q: 一个对象只有一个int型成员变量，sizeof的大小是多少？
+-	A：4
++	Q：一个对象有一个int型和一个char型成员变量，sizeof的大小是多少？
+-	Q：8（字节对齐）
++	Q：一个对象只有一个int型成员变量和一个虚函数，sizeof的大小是多少？
+-	A：16（字节对齐，虚函数指针，8位）
+
+---
+
 12、智能指针的原理，weak_ptr是做什么用的？
 13、vector容量满了会发生什么？
 14、map和unordered_map有什么区别？各自如何实现？
