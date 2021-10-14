@@ -1,12 +1,12 @@
 # Introduce Myself
 
-OK, let me introduce myself to you. my name is wanghao,and I was born in HeNan.XinYang, where near AnHui.HeFei. I has studied in Lishui University from 2014(twenty fourteen) to 2018(twenty eighteen).
+OK, let me introduce myself to you. my name is wanghao,came from HeNan.XinYang, where near AnHui.HeFei.and I was born in 1995, and has studied in Lishui University from 2014(twenty fourteen) to 2018(twenty eighteen).
 
-After graduating in June 2018,I worked in Hangzhou Shenhao Technology Corporation, ltd. in Hangzhou using C++ to do robot related work, and left hangzhou in March 2020.
+After graduating in June 2018,I worked in Hangzhou Shenhao Technology Corporation, ltd. using C++ to do robot related work, and left hangzhou in March 2020.
 
 In July 2020, I came to Beijing to start my current job in QiLin Software Corporation, in which my primary work is to develop domestic office software products by C++ with my colleagues.
 
-In March this year, our department, Intelligent Application division, decided to develop a new product, and I was assigned to do the WEB development by VUE. Within a period of six months, I has helped them to build version 1.0 successfully, and want to search for job about C++ now.
+In March this year, our department, Intelligent Application division, decided to develop a new product, and I was assigned to do the WEB development by VUE. Within a period of six months, I has helped them to build version 1.0 successfully, and want to search for a job about C++ now.
 
 This is my study and work experience.
 
