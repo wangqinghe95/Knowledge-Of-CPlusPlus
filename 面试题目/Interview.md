@@ -57,64 +57,21 @@
 	3. 禁止赋值和拷贝；
 	4. 用户通过接口获取实例；
 
-+ 懒汉模式：直到使用才实例化，不被调用就不会被占内存；缺点是线程安全和内存泄漏。
 ```
-class Singleton 
-{
-private:
-	Singleton();
-	Singleton(Singleton&)=delete;
-	Singleton(const Singleton&)=delete;
-	static Single* m_instance_ptr;
+class A {
 public:
-	~Singleton();
-	static Singleton* get_instance() {
-		if (m_instance_ptr == nullptr) {
-			m_instance_ptr = new Singleton;
-		}
-		return m_instance_ptr;
-	}
+	static A& getInstance();
+private:
+	A();
+	A(const A& rhs);
 };
 
-Singleton* Singleton::m_instance_ptr = nullptr;
-
-```
-
-+ 加锁和共享指针版懒汉模式：缺点是使用智能锁需要调用者也要用到智能锁；加锁耗费资源，代码量增多。
-```
-class Singleton
+A& A::getInstance()
 {
-public:
-	typedef std::shared_ptr<Singleton> Ptr;
-	// 同上
-	...
-	static Singleton* get_instance() {
-		if (m_instance_ptr == nullptr) {
-			std::lock_guard<std::mutex> lk(m_mutex);
-			if (m_instance_ptr == nullptr) {
-				m_instance_ptr = std::shared_ptr<Singleton>(new Singleton);
-			}
-		}
-		return m_singleton_ptr;
-	}
-private:
-	// 同上
-	...
-	static Ptr m_instance_ptr;
-	static std::mutex m_mutex;
+	static A a;
+	return a;
 }
 ```
-
-+ 局部静态变量版：
-
-class Singleton
-{
-public:
-	static Singleton& get_instance() {
-		static Singleton instance;
-		return instance;
-	}
-}
 
 ---
 
@@ -160,18 +117,47 @@ Question：（64bit Operate System）
 
 ---
 
-15、右值引用是什么，move是为了解决什么问题？
+15. 右值引用是什么，move是为了解决什么问题？
+	+ 是对临时变量的一种引用方法，在初始化完成之后，仍然可以改变临时对象的值；
+	+ move 是将对象的所有权从一个对象转移到另一个对象，没有内存搬迁或者拷贝；主要是为了解决拷贝构造函数的一些额外消耗；
 
 ---
 
-16、构造函数能不能抛出异常？析构函数呢？
-17、C++中哪几种类型转换，区别是什么？
-18、从源代码到可执行程序，中间的过程是什么样的？
+16. 构造函数能不能抛出异常？析构函数呢？
+	1. 构造函数可以抛出异常，但是抛出异常后会导致析构函数无法被调用，但是对象申请到的内存资源会被系统释放；因为析构函数不能被调用所以有内存泄漏的风险；总结就是构造函数可以抛出异常，但是必须保证在构造函数抛出异常之前，把系统资源释放掉；
+	2. 析构函数不能抛出异常。虽然C++并不禁止析构函数抛出异常，但是这样会导致程序过早结束或者出现不明确的行为。
 
-0x02：数据结构与算法部分
-1、二叉树的四种遍历方式
-2、哈希表工作原理，如何解决哈希冲突？
-3、编程实现一个二分查找
+---
+
+17. C++中哪几种类型转换，区别是什么？
+	1. reinterpret_cast:类型之间的转换
+	2. const_cast:用于修改类型的 const 和 validate 属性；
+	3. static_cast：派生类指针或引用转换为基类
+	4. dynamic_cast: 基类指针或引用转换成派生类
+
+（代码补充）
+---
+
+18. 从源代码到可执行程序，中间的过程是什么样的？
+	1. 预编译：处理 # 号开头的预处理命令
+	2. 编译：生成汇编文件
+	3. 汇编：生成重定向文件
+	4. 链接：将可重定向文件做静态链接和动态链接处理
+	5. 可执行程序：生成可执行文件
+	
+---
+
+# 0x02：数据结构与算法部分
+1. 二叉树的四种遍历方式
+	+ 前序遍历、中序遍历、后序遍历、层次遍历
+
+---
+
+2. 哈希表工作原理，如何解决哈希冲突？
+	
+---
+
+3. 编程实现一个二分查找
 4、常用的排序算法，各自的的时间复杂度是什么？
 5、1-2走台阶问题，递归和动态规划两种解题方法
 6、一个一维数组，先单调递增，后单调递减，如何找到这个拐点？
