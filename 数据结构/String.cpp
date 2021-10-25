@@ -1,7 +1,7 @@
 /*
 String 类
 */
-
+#include"String.hpp"
 
 class String
 {
@@ -13,7 +13,7 @@ class String
         String& operator=(const String &str);        //重载=
         String& operator+=(const String &str);        //重载+=
         bool operator==(const String &str) const;    //重载==
-        char &operatorp[](int n) const;              //重载 []
+        char &operator[](int n) const;              //重载 []
 
         size_t size() const;                         // 获取长度
         const char* c_str() const;                   //获取 C 字符段长度
@@ -22,9 +22,9 @@ class String
     private:
         char *data;
         size_t length;
-}
+};
 
-String::String(const char*str=NULL)
+String::String(const char*str = nullptr)
 {
     if (!str){
         length = 0;
@@ -53,7 +53,7 @@ String::~String()
 
 String String::operator+(const String& str) const
 {
-    string newString;
+    String newString;
     newString.length = length + str.size();
     newString.data = new char[newString.length + 1];
     strcpy(newString.data, data);
@@ -63,7 +63,7 @@ String String::operator+(const String& str) const
 
 String& String::operator=(const String &str)
 {
-    if (this == str){
+    if (*this == str){
         return *this;
     }
 
@@ -86,7 +86,7 @@ String& String::operator+=(const String &str)
     return *this;
 }
 
-inline String::operator==(const String &str) const
+inline bool String::operator==(const String &str) const
 {
     if (length != str.length){
         return false;
@@ -94,7 +94,7 @@ inline String::operator==(const String &str) const
     return strcmp(data, str.data) ? false : true;
 }
 
-inline char& String::operatorp[](int n) const; 
+inline char& String::operator[](int n) const
 {
     if (n >= length){
         return data[length-1];
@@ -127,4 +127,58 @@ istream& operator<< (ostream &os, String &str)
 {
     os << str.data;
     return os;
+}
+
+/**********************************/
+char* strcpy(char* dest, const char* src)
+{
+    if (dest == nullptr || src == nullptr) {
+        return nullptr;
+    }
+
+    char* p = dest;
+    while (*src != '\0') {
+        *p++ = *src++;
+    }
+
+    *p = '\0';
+    return dest;
+}
+
+int strlen(const char* str)
+ {
+    int res = 0;
+    if (nullptr == str) {
+        return -1;
+    }
+    else {
+        while(*str++ != '\0') {
+            res++;
+        }
+    }
+    return res;
+ }
+
+int strcmp(const char* str1, char* str2)
+{
+    assert(str1 != nullptr && str2 != nullptr);
+
+    for (; *str1 == *str2; str1++, str2++);
+
+    if (*str1 == '\0' && *str2 == '\0'){
+        return 0;
+    }
+
+    return ((unsigned char)*str1 < (unsigned char)*str2 ? -1 : 1);
+}
+
+char* strcat(char* dest, const char* src)
+{
+    assert(dest != nullptr && src != nullptr);
+    char* s1 = dest;
+    while(*s1 != '\0') {
+        s1++;
+    }
+    while(*s1++ = *src++);
+    return dest;
 }
