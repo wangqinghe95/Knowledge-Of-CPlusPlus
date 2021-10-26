@@ -10,7 +10,7 @@ struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
-TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
@@ -18,7 +18,6 @@ TreeNode() : val(0), left(nullptr), right(nullptr) {}
  //二叉树的删除
 TreeNode* deleteNode(TreeNode* root, int key)
 {
-    TreeNode* p = nullptr;
     if (root == nullptr){
         return nullptr;
     }
@@ -26,7 +25,7 @@ TreeNode* deleteNode(TreeNode* root, int key)
     if (root->val > key){
         root->left = deleteNode(root->left, key);
     }
-    else if (root->left < key){
+    else if (root->val < key){
         root->right = deleteNode(root->right, key);
     }
     else{
