@@ -91,3 +91,91 @@ int main()
     return 0;
 }
 
+/**
+ * @brief Strategy mode combined with simply factory mode
+ * 
+ */
+
+typedef enum StrategyType{
+    StrategyA,
+    StrategyB,
+    StrategyC
+}STRATEGYTYPE;
+
+class Strategy
+{
+public:
+    virtual void AlgorithmInterface() = 0;
+    virtual  ~Strategy() = 0;
+};
+
+Strategy::~Strategy(){}
+
+class ConcreteStrategyA : public Strategy
+{
+public:
+    void AlgorithmInterface(){
+        cout << "I am from ConcreteStrategyA." << endl;
+    }
+    ~ConcreteStrategyA(){}
+};
+
+class ConcreteStrategyB : public Strategy
+{
+public:
+    void AlgorithmInterface(){
+        cout << "I am from ConcreteStrategyB." << endl;
+    }
+    ~ConcreteStrategyB(){}
+};
+
+class ConcreteStrategyC : public Strategy
+{
+public:
+    void AlgorithmInterface(){
+        cout << "I am from ConcreteStrategyC." << endl;
+    }
+    ~ConcreteStrategyC(){}
+};
+
+class Context
+{
+public:
+    Context(STRATEGYTYPE enum_strategy_type){
+        switch (enum_strategy_type)
+        {
+        case StrategyA:
+            pStrategy = new ConcreteStrategyA;
+            break;
+        case StrategyB:
+            pStrategy = new ConcreteStrategyB;
+            break;
+        case StrategyC:
+            pStrategy = new ConcreteStrategyC;
+            break;
+        default:
+            break;
+        }
+    }
+    ~Context(){
+        if(pStrategy){
+            delete pStrategy;
+            pStrategy = NULL;
+        }
+    }
+    void callAlgorithm(){
+        if(pStrategy){
+            pStrategy->AlgorithmInterface();
+        }
+    }
+private:
+    Strategy* pStrategy;
+};
+
+int main()
+{
+    Context *pContext = new Context(StrategyA);
+    pContext->callAlgorithm();
+    return 0;
+}
+
