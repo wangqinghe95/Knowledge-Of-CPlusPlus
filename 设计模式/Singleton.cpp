@@ -1,3 +1,43 @@
+/**
+ * 20230416
+*/
+
+/**
+ * 单例模式
+*/
+
+/**
+ * 单例模式：
+ * 该模式只支持 C++11 之后版本
+*/
+
+#include<iostream>
+using namespace std;
+
+class Singleton
+{
+public:
+    static Singleton& getInstance(){
+        static Singleton value;
+        return value;
+    }
+private:
+    Singleton() = default;
+    Singleton(const Singleton& other) = delete; // 禁止拷贝构造函数
+    Singleton& operator=(const Singleton&) = delete;    // 禁止拷贝复制运算符
+};
+
+int main()
+{
+    Singleton &s1 = Singleton::getInstance();
+    Singleton &s2 = Singleton::getInstance();
+
+    cout << "s1 address:" << &s1 << endl;
+    cout << "s2 address:" << &s2 << endl;
+    return 0;
+}
+
+
 /*
 单例模式：允许创建一个并且只允许创建一个实例的类；
     特点：只提供唯一一个实例，具有全局变量的特点，并且在任何位置都可以通过接口获取到那个唯一实例
