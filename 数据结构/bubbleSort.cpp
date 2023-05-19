@@ -9,6 +9,13 @@
 稳定算法
 */
 
+/**
+ * @brief 不断地比较相邻的两个数据的大小，根据大小进行排序，如果顺序不对则交换彼此位置。
+ * 
+ * @param arr 
+ * @param n 
+ */
+
 //递增顺序
 void bubble(int arr[], int n)
 {

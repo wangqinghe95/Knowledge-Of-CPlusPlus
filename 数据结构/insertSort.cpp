@@ -4,6 +4,13 @@
 稳定性：稳定算法
 */
 
+/**
+ * @brief 取出一个数字后，对已排序的数字从后往前依次比较，选择合适的位置插入。
+ * 
+ * @param arr 
+ * @param n 
+ */
+
 void insert_sort(int arr[], int n){
     for (int i = 1; i < n; ++i){
         int j = i;
