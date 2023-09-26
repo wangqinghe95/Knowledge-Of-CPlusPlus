@@ -44,6 +44,64 @@ Box operator+(const Box&, const Box&);  // 类的非成员函数
 6. 预处理运算符
 
 ## 类重载，重写，隐藏的区别
-1. 重载是发生在同一个类中，同一个类中拥有多个相同函数名，但是形参列表的类型，顺序，和数量不完全一样即可
-2. 重写派生类和基类函数的关系，当派生类重写从基类中继承过来的虚函数的过程，就是重写的过程。子类中重写的函数需要再基类中被关键字 virtual 修改，并且该函数不能是 static 函数。
+1. 重载是同一个类中同名函数之间的关系。要求同名函数的形参列表的类型，顺序，和数量不完全一样
+2. 重写是父类和子类的同名函数之间的关系，主要是子类重新实现父类的被 virtual 修饰的函数，要求函数的返回值，函数名，参数列表都保持一致
 3. 隐藏就是子类重新实现父类的同名函数，只要是同名的，父类非虚函数都会隐藏
+
+### 代码
+```
+#include<iostream>
+using namespace std;
+
+class A{
+    public:
+        virtual void func(int a){
+            cout << "A:: virtual " << a << endl;
+        }
+        void func2(int a){
+            cout << "A:: no virtual " << a << endl;
+        }
+};
+
+class B : public A{
+    public:
+        void func(int a){
+            cout << "B:: override " << a << endl;
+        }
+        void func2(int a){
+            cout << "B:: no override " << a << endl;
+        }       
+};  
+
+int main(){
+    A a;
+    a.func(10);
+    a.func2(20);
+
+    B b;
+    b.func(30);
+    b.func2(40);
+
+    A* c = &b;
+    c->func(50);
+    c->func2(60);
+
+    A* e = nullptr;
+    B* d = dynamic_cast<B*>(&a);
+    if (nullptr == d){
+        cout << "dynamic_cast is nullptr" << endl;
+    }
+    else
+    {
+        d->func(70);
+        d->func2(80);
+    }
+
+    return 0;    
+}
+
+```
+
+### 代码分析
+1. 当派生类重写基类没有被 virtual 修饰的函数时，基类指针指向派生类对象时，此时该对象调用的函数是基类的函数
+2. 当派生类重写基类被 virtual 修饰的函数时，基类指针指向派生类对象时，此时该对象调用的函数是派生类的函数
