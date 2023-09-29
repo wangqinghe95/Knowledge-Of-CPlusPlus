@@ -17,5 +17,5 @@
 
 [C++11 New Feature](https://zhuanlan.zhihu.com/p/139515439)
 
-1. 函数对象
-2. lambda 表达式
+1. [Functor](./Functor.md)
+2. [lambda](./lambda.md)
