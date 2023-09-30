@@ -1,4 +1,10 @@
 # C++11 特性
+## Content
++ [函数对象/仿函数](./Functor.md)
++ [lambda](./lambda.md)
++ [只能指针](./Smart-Pointer.md)
+
+## 新特性
 + 类型推导：auto && decltype
 + 左值右值：
 + 列表初始化：
@@ -17,5 +23,3 @@
 
 [C++11 New Feature](https://zhuanlan.zhihu.com/p/139515439)
 
-1. [Functor](./Functor.md)
-2. [lambda](./lambda.md)
