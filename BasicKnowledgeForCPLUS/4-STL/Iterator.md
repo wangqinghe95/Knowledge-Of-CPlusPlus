@@ -65,7 +65,26 @@ int main()
 }
 ```
 
-2. Analyze
+2. 分析
 + vec_myvertor.insert(iter, 200); // 申请一块新的内存存放原有的数据和插入的数据
 + vec_myvertor.insert(iter, 5, 5500);  // iter 指向一块已失效的数据，所以发生崩溃
 
+## 迭代器自增
+### 迭代器 ++iter 和 iter++ 哪个好，为什么
++ 前+ 前置返回一个引用，后置返回一个对象；
++ 前置不会产生临时对象，后置必须产生临时对象，临时对象会导致效率降低；
+
+```
+//++iter 代码实现
+int& operator++(){
+    * this += 1;
+    return *this;
+}
+
+//iter++ 代码实现
+int opertor++(int){
+    int temp = *this;
+    ++*this;
+    return temp;
+}
+```

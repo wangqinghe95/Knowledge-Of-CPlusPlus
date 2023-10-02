@@ -1,3 +1,3 @@
 # Basic C And C Plus Plus
-+ [Difference Between C And C++](./Difference-Between-C-And-C++.md)
-+ [Differnece Between Reference And Pointer in C++](./Difference-Between-Reference-And-Pointer-in-C++.md)
++ [C 和 C++ 的区别](./Difference-Between-C-And-C++.md)
++ [指针和引用的区别](./Difference-Between-Reference-And-Pointer-in-C++.md)
