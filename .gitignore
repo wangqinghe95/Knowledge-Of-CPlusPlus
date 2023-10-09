@@ -1,5 +1,2 @@
-.vscode/settings.json
 设计模式/output
-.vscode/tasks.json
-.vscode/launch.json
-.vscode/c_cpp_properties.json
+.vscode
