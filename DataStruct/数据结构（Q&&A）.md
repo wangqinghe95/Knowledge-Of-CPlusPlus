@@ -34,7 +34,7 @@ y = x ^ yubuntu
 x = x ^ y
 ```
 
-## 编写 string 类
+## [编写 string 类](https://www.cnblogs.com/wanghao-boke/p/17759412.html)
 
 ## 链表反转
 
