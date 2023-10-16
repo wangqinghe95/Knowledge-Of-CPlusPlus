@@ -4,7 +4,6 @@
 
 ## 异常处理
 + C++ 异常是对程序运行过程中发生的异常情况的一种响应。异常提供了将控制权从程序的一部分传递到另一部分的部分
-
 + 对异常处理通常有三个组成部分：引发异常，使用处理程序捕获异常，使用 try 块
 + 引发异常：
     - throw 关键字表示引发异常，紧随其后的值指出了异常的特征
@@ -24,5 +23,35 @@
 + 通常，引发异常的函数将传递一个对象。这样做有以下优点：
     - 可以使用不同的异常类型区分不同的函数在不同情况下引发的异常
     - 对象可以携带信息，程序可以根据这些信息来确定引发异常的原因，catch 块可以根据这些信息来决定采取什么样的措施
+
+## 代码示例
++ 除 0 错误的异常捕获，不会导致程序崩溃
+
+```
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int dividend = 100;
+    int divisor = 0;
+    int quotient;
+
+    try
+    {
+        if(divisor == 0) {
+            throw "Division by zero conditional";
+        }
+        quotient = dividend / divisor;
+        cout << "Quotient = " << quotient << endl;
+    }
+    catch(const char* msg){
+        cout  << msg << endl;
+    }
+
+    return 0;   
     
+}
+```
+
 [C++ 异常处理](https://zhuanlan.zhihu.com/p/508803947)
