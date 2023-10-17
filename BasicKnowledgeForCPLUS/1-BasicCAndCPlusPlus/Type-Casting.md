@@ -29,7 +29,7 @@
 + 在类层次间进行上下行转换时，dynamic_cast 和 static_cast 效果是一样的；
 + 在进行下行转换时， dynamic_cast 既有类型检查，比 static_cast 更安全；
 
-**EXAMPLE**
+## Example
 ```
 #include<bits/stdc++.h>
 using namespace std;
@@ -89,7 +89,8 @@ int main(){
 }
 ```
 
-运行结果：
++ 运行结果：
+```
 reinterpret_cast 输出a
 const_cast 输出： 100
 static_cast ： 
@@ -98,4 +99,5 @@ static_cast ：
 dynamic_cast : 
 2
 s4 指针为 nullptr
+```
     
