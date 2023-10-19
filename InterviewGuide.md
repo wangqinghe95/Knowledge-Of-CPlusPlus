@@ -11,6 +11,7 @@
 + 解释 C++ 中的类型推导（type inference），例如 auto 关键字和 decltype 关键字。
 + C++ 中的 static 关键字有哪些用途？
 + 解释 C++ 中的强制类型转换（type casting），例如 static_cast、dynamic_cast、reinterpret_cast 等。
++ C++ nullptr 和 NULL 有什么区别？
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
