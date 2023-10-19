@@ -4,14 +4,15 @@
 
 ### Basic C++
 + C++与 C 有什么区别？
-+ 解释 C++ 中的 const 关键字以及它的作用
-+ 解释引用（reference）和指针（pointer）之间的区别。
-+ 解释区间（range）和范围（span）。
-+ 什么是强制内联（forced inline）？它与普通内联（normal inline）有什么区别？
-+ 解释 C++ 中的类型推导（type inference），例如 auto 关键字和 decltype 关键字。
-+ C++ 中的 static 关键字有哪些用途？
-+ 解释 C++ 中的强制类型转换（type casting），例如 static_cast、dynamic_cast、reinterpret_cast 等。
++ C++ 中的 const 关键字以及它的作用
 + C++ nullptr 和 NULL 有什么区别？
++ C++ 中的 static 关键字有哪些用途？
++ C++ 有几种类型 new？
++ 引用（reference）和指针（pointer）有什么区别。
++ 区间（range）和范围（span）有什么区别。
++ 什么是强制内联（forced inline）？它与普通内联（normal inline）有什么区别？
++ 什么是 C++ 中的类型推导（type inference），例如 auto 关键字和 decltype 关键字。
++ 什么是 C++ 中的强制类型转换（type casting），例如 static_cast、dynamic_cast、reinterpret_cast 等。
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
