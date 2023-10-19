@@ -1,10 +1,4 @@
-# Knowledege Of C/C++
-## C/C++
-## Operation System
-
-<!---------------Design Pattern-------------------------->
-
-## Design Pattern
+# Design Pattern
 
 ### 什么是单例模式（singleton pattern）？解释它的优点和缺点。
 + 一个类只允许拥有一个实例存在的模式，称之为单例模式
