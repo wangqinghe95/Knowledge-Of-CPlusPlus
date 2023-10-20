@@ -13,7 +13,7 @@ using namespace std;
 
 #define MAXLINE 80
 #define SERV_PORT 80
-const char* IP_ADDRESS = "204.79.197.200";
+// const char* IP_ADDRESS = "202.89.233.100";
 
 const char HOSTNAME[256] = "www.bing.com";
 
@@ -81,7 +81,7 @@ int set_nonblocking(int fd) {
 
 int connectTCP(const char* p_in_IPAddress)
 {
-    /*
+# if 1
     struct sockaddr_in servaddr;
     char buf[MAXLINE];
     int sockfd, n;
@@ -90,11 +90,11 @@ int connectTCP(const char* p_in_IPAddress)
 
     bzero(&servaddr, sizeof(servaddr));
     servaddr.sin_family = AF_INET;
-    inet_pton(AF_INET, "23.32.29.107", &servaddr.sin_addr);
+    inet_pton(AF_INET, p_in_IPAddress, &servaddr.sin_addr);
     servaddr.sin_port = htons(SERV_PORT);
 
-    int status = connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
-    */
+    int ret = connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
+#else
 
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd == -1) {
@@ -113,7 +113,10 @@ int connectTCP(const char* p_in_IPAddress)
     }
 
     int ret = connect(sockfd, (struct sockaddr*)&addr, sizeof(addr));
-    if (ret == -1 && errno != EINPROGRESS) {
+    
+    
+#endif
+    if (ret == -1) {
         perror("connect");
         return -1;
     }
@@ -122,7 +125,11 @@ int connectTCP(const char* p_in_IPAddress)
     }
 
     char send_buf[1024] = {0};
-    sprintf(send_buf, "GET / HTTP/1.1\r\nHost: %s\r\n\r\n", IP_ADDRESS);
+    sprintf(send_buf, "GET / HTTP/1.1\r\nHost: cn.bing.com\r\n\r\n");
+    // sprintf(send_buf, "GET / HTTP/2\r\nHost: cn.bing.com\r\nUser-Agent: curl/7.58.0\r\nAccept: */*");
+
+    printf("send IP:%s, data:\n%s\n",p_in_IPAddress,send_buf);
+    
     // write(sockfd, send_buf, strlen(send_buf));
     send(sockfd, send_buf,  strlen(send_buf), 0);
 
