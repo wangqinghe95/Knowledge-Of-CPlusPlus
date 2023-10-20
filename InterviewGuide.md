@@ -112,8 +112,3 @@
 ## Test
 + 使用过代码覆盖率（code coverage）吗？
 + 使用过C++ 中的测试框架吗，例如 Google Test 和 Boost.Test。
-
-## Other
-91. 在 C++ 中实现一个简单的线程池，并解释其原理。
-+ [ThreadPool_1](https://zhuanlan.zhihu.com/p/367309864)
-+ [ThreadPool_2](https://www.cnblogs.com/lzpong/p/6397997.html)
