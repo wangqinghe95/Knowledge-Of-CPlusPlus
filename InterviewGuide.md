@@ -8,6 +8,7 @@
 + C++ nullptr 和 NULL 有什么区别？
 + C++ 中的 static 关键字有哪些用途？
 + C++ 有几种类型 new？
++ C++ 中 malloc/free, new/delete 实现原理？
 + 引用（reference）和指针（pointer）有什么区别。
 + 区间（range）和范围（span）有什么区别。
 + 什么是强制内联（forced inline）？它与普通内联（normal inline）有什么区别？
