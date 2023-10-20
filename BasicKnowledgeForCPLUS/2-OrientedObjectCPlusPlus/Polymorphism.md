@@ -52,6 +52,7 @@
 1. 实现原理 
     + C++ 编译器为每个含虚函数的类实例生成一个虚表，虚表用来记录该实例对应的类中虚函数的地址，即虚表中的指针指向虚函数的地址。当子类继承父类时，子类回重写父类的虚函数，虚函数表中的虚函数地址也会更新为子类的虚函数地址，通过父类指针调用子类重写的虚函数时，就实现了多态。
 2. 实例代码
++ C++ 多态代码示例：
 ```
 class A
 {
@@ -72,6 +73,57 @@ int main() {
     A* pb = new B;
     pb->func();
 }
+
+```
+
++ C 模拟 C++ 多态实现
+```
+#include<stdio.h>
+
+typedef void (*FUN)();
+
+typedef struct _A
+{
+    FUN _fun;
+    int _a;
+}A;
+
+typedef struct _B
+{
+    A _a_;
+    int _b;
+}B;
+
+void _fA()
+{
+    printf("_A:_func()\n");
+}
+
+void _fB()
+{
+    printf("_B:_func()\n");
+}
+
+void test()
+{
+    A a;
+    B b;
+    a._fun = _fA;
+    b._a_._fun = _fB;
+
+    A* pA = &a;
+    pA->_fun();
+    pA = (A*)&b;
+    pA->_fun();
+}
+
+int main()
+{
+    test();
+
+    return 0;
+}
+
 ```
 
 3. 虚函数调用过程
