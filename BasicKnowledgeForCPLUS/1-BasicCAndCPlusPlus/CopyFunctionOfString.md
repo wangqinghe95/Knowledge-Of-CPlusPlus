@@ -1,6 +1,9 @@
-# strcpy 和 memcpy 的区别(待完善测试实例)
+# strcpy/strncpy/memcpy 
 
 ## strcpy
+1. 描述
+    + 将一个字符串复制到另一个字符串中
+2. 实现
 
 ```
 char *myStrcpy(char* dest, const char* src){
@@ -15,7 +18,37 @@ char *myStrcpy(char* dest, const char* src){
 }
 ```
 
+
+## strncpy
+1. 描述
+    + 将一个字符串的前 count 字符复制到另一个字符串中
+2. 实现
+
+```
+char* strncpy(char* dest, const char* source, size_t count){
+    if (NULL == dest || NULL == source || count <= 0){
+        return NULL;
+    }
+
+    char *start = dest;
+    while (count && (*dest++ = *source++)){
+        count--;
+    }
+
+    if (count){
+        while(--count){
+            *dest ++ = '\0';
+        }
+    }
+
+    return (start);
+}
+```
+
 ## memcpy
+1. 描述
+    + 将一个内存中的前 size 字符复制到另一个字符串中
+2. 实现
 
 ```
 void *myMemcpy(void *dest, const void *src, size_t size){
@@ -46,25 +79,3 @@ void *myMemcpy(void *dest, const void *src, size_t size){
 }
 ```
 
-## strncpy
-
-```
-char* strncpy(char* dest, const char* source, size_t count){
-    if (NULL == dest || NULL == source || count <= 0){
-        return NULL;
-    }
-
-    char *start = dest;
-    while (count && (*dest++ = *source++)){
-        count--;
-    }
-
-    if (count){
-        while(--count){
-            *dest ++ = '\0';
-        }
-    }
-
-    return (start);
-}
-```

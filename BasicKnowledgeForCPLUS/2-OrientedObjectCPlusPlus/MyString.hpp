@@ -20,6 +20,35 @@ char* strcpy(char* dest, const char* src)
     return dest;
 }
 
+char* strncpy(char* dest, const char* sour, size_t num)
+{
+    char* ptr = dest;
+    while(*sour != '\0' && num > 0) {
+        *dest = *sour;
+        dest++;
+        sour++;
+        num--;
+    }
+
+    while(num > 0) {
+        *dest = '\0';
+        dest++;
+        num--;
+    }
+
+    return ptr;
+}
+
+void* memcpy(void* dest, const void* src, size_t n)
+{
+    char*d = (char*)dest;
+    const char*s = (const char*)src;
+    while(n--){
+        *d++ = *s++;
+    }
+    return dest;
+}
+
 int strlen(const char* str)
  {
     int res = 0;

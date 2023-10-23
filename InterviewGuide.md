@@ -14,6 +14,7 @@
 + 什么是强制内联（forced inline）？它与普通内联（normal inline）有什么区别？
 + 什么是 C++ 中的类型推导（type inference），例如 auto 关键字和 decltype 关键字。
 + 什么是 C++ 中的强制类型转换（type casting），例如 static_cast、dynamic_cast、reinterpret_cast 等。
++ strcpy、strncpy、memcpy 的实现与区别？
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
