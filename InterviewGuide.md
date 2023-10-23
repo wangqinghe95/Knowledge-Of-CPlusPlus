@@ -76,6 +76,7 @@
 + 什么是协程（coroutine）？它们在 C++ 中有什么应用场景？
 + 什么是异步 IO（asynchronous IO）？它在 C++ 中如何实现？解释下IO多路复用？
 + 解释 C++ 中的内存布局（memory layout），例如栈、堆、全局变量等。
++ 函数调用过程？
 
 ## Data Structrure
 + 掌握 C++ 中的排序算法，例如快速排序、归并排序等。
