@@ -96,6 +96,7 @@
 + 什么是 Trie 树？它有什么作用？
 + 什么是最短路径算法（shortest path algorithm）？例如 Dijkstra 算法、Bellman-Ford 算法等。
 + 什么是最小生成树算法（minimum spanning tree algorithm）？例如 Prim 算法、Kruskal 算法等。
++ 什么是一致性哈希
 
 ## Design Pattern
 + 什么是单例模式（singleton pattern）？解释它的优点和缺点。
