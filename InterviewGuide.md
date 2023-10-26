@@ -59,6 +59,7 @@
 + C++11 中的异常处理机制有哪些，例如 try-catch 块、throw 关键字等。
 + C++11 中的移动语义（move semantics）是什么？它有什么作用？
 + C++11 std::function 介绍和使用。
++ C++11 std::bind 介绍与使用。
 + C++11 智能指针（smart pointer）的介绍和作用。
 
 #### C++ 14/17/20
