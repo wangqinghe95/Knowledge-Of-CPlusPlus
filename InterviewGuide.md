@@ -9,6 +9,8 @@
 + C++ 中的 static 关键字有哪些用途？
 + C++ 有几种类型 new？
 + C++ 中 malloc/free, new/delete 实现原理？
++ C++ RTTI（Run Time Type Identification）
++ C++ 函数指针是什么？
 + 引用（reference）和指针（pointer）有什么区别。
 + 区间（range）和范围（span）有什么区别。
 + 什么是强制内联（forced inline）？它与普通内联（normal inline）有什么区别？
@@ -47,19 +49,23 @@
 + 解释 lambda 表达式及其用法。
 
 ### C++ 11/14/17/20
-+ 解释智能指针（smart pointer）及其作用
-+ 什么是异常（exception）？如何处理异常？异常的优缺点？
-+ C++ 中的异常处理机制有哪些，例如 try-catch 块、throw 关键字等。
-+ 解释 RTTI（Run Time Type Identification）
-+ 什么是右值引用（rvalue reference）？与左值引用（lvalue reference）有什么区别？
+#### C++ 11
++ C++11 有哪些新特性和改进？
++ C++11 异常（exception）介绍？
++ C++11 右值引用（rvalue reference）？与左值引用（lvalue reference）有什么区别？
++ C++11 std::forward,完美转发（perfect forwarding）。
++ C++11 中的原子操作（atomic operation）和 std::atomic 类型。
++ C++11 lambda 表达式及其用法。
++ C++11 中的异常处理机制有哪些，例如 try-catch 块、throw 关键字等。
 + C++11 中的移动语义（move semantics）是什么？它有什么作用？
-+ 解释完美转发（perfect forwarding）。
-+ 解释 C++11 中的原子操作（atomic operation）和 std::atomic 类型。
-+ 解释 lambda 表达式及其用法。
++ C++11 std::function 介绍和使用。
++ C++11 智能指针（smart pointer）的介绍和作用。
+
+#### C++ 14/17/20
 + C++20有哪些新特性和改进？
 + C++17有哪些新特性和改进？
 + C++14有哪些新特性和改进？
-+ C++11有哪些新特性和改进？
+
 
 ## Linux Shell
 

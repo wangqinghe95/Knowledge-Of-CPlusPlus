@@ -591,7 +591,7 @@
 + 不能，static 成员不属于任何类对象或类实例，即使给此函数加上 virtual 也是没有意义的；
 + 静态和非静态成员函数的一个主要区别是静态成员函数没有 this 指针；
     - 虚函数依靠 vptr 和 vtable 来处理，vptr 是一个指针，在类的构造函数中创建生成，并且只能用 this 指针来访问，因为它是类的一个成员，并且 vptr 指向保存虚函数地址的 vtable。对于静态成员来说它没有 this 指针，所以就无法访问 vptr。
-+ 这就是为什么静态函数不能为虚函数的原因，虚函数的调用关系是 this-> vptr -> vtable -> virtual function
++ 这就是为什么静态函数不能为虚函数的原因，虚函数的调用关系是 this-> vptr -> vtable -> virtual_function
 
 ---
 

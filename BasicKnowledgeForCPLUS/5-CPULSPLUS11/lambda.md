@@ -8,7 +8,7 @@
 ```
 [capture_list](params_list) mutable exception -> return_type
 {
-    function body;
+    function_body;
 }
 ```
 + 解释：
