@@ -18,6 +18,7 @@
 + 什么是 C++ 中的强制类型转换（type casting），例如 static_cast、dynamic_cast、reinterpret_cast 等。
 + strcpy、strncpy、memcpy 的实现与区别？
 + 数组名和数组首地址的区别？
++ 如何判断两个结构体是否相等
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
