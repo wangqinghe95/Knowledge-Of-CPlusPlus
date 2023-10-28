@@ -67,6 +67,9 @@
 + nothrow new ： 在空间分配失败情况下，不抛出异常而是返回 NULL
 + placement new ： 在一块已经分配成功的内存上重新构造对象或对象数组
 
+### struct 和 class 的区别
+// TODO
+
 <!------------ Oriented Object C++ --------------------->
 
 ## Oriented Object C++
