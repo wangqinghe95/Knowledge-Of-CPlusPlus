@@ -11,7 +11,6 @@
 + C++ 中 malloc/free, new/delete 实现原理？
 + C++ RTTI（Run Time Type Identification）
 + C++ 函数指针是什么？
-+ 引用（reference）和指针（pointer）有什么区别。
 + 区间（range）和范围（span）有什么区别。
 + 什么是强制内联（forced inline）？它与普通内联（normal inline）有什么区别？
 + 什么是 C++ 中的类型推导（type inference），例如 auto 关键字和 decltype 关键字。
@@ -21,7 +20,9 @@
 + struct 和 class 的区别
 + 形参和实参的区别
 + 如何判断两个结构体是否相等
++ 引用（reference）和指针（pointer）有什么区别。
 + 值传递、指针传递、引用传递的区别和效率？
++ 将引用作为函数参数的好处是什么？
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
