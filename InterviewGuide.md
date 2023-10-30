@@ -21,6 +21,7 @@
 + struct 和 class 的区别
 + 形参和实参的区别
 + 如何判断两个结构体是否相等
++ 值传递、指针传递、引用传递的区别和效率？
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
