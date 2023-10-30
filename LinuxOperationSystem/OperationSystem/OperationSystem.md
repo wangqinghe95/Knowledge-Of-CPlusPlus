@@ -89,16 +89,19 @@
     5. 栈区
 
 ### C++ main 函数执行前后做了什么
-// TODO
 + main 函数执行之前，注意是为了初始化系统相关资源：
     + 设置栈指针；
     + 初始化静态 static 变量和 global 全局变量，即 .data 段的内容；
     + 将未初始化部分的全局变量赋初始值，即 .bss 内容（数值型 short、int、long 为 0，bool 型为 false、指针为 null 等等）
-    + 全局对象初始化，在 main 之前调用构造函数，这是可能执行前的一些代码；
+    + 静态对象，全局对象初始化，在 main 之前调用构造函数，这是可能执行前的一些代码；
+    + 动态库的初始化：设置运行环境，配置标准输入输出等
     + 将 main 函数参数 argc、argv 等传递给 main 函数，然后才真正运行 main 函数；
-    + attribute(constructor) //构造函数
 
 + main 函数执行之后：
-    + 全局的析构函数会在 main 执行；
-    + 可以注册一个 atexit 函数，它会在 main 之后执行；
-    + attribute((destructor))
+    + 全局对象和静态对象的析构函数；
+    + 动态运行库的清理
+    
++ 在 main 函数之前和之后执行自定义函数的方式
+1. 定义一个全局或者静态对象
+2. 使用 attribute(constructor) 和 attribute((destructor)) 在 main 之前和之后执行
+3. 注册 atexit 函数在 main 函数之后执行

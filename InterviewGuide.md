@@ -73,22 +73,34 @@
 ## Linux Shell
 
 ## Operation System
+### 并发
+
+#### thread
 + 什么是线程（thread）？C++ 中如何创建和管理线程？
-+ 解释互斥锁（mutex）和条件变量（condition variable）。
++ 什么是互斥锁（mutex）和条件变量（condition variable）。
 + 什么是死锁（deadlock）？如何避免死锁？
++ C++ 中的多线程同步机制有哪些，例如互斥量、信号量、读写锁等。
++ 解释多线程中的线程安全（thread safety）和竞态条件（race condition）。
+
+#### process
 + 什么是信号（signal）？在 C++ 中如何处理信号？
 + 什么是多进程（multiprocessing）？与多线程相比有哪些区别？
-+ 什么是内存池？
-+ 解释内存泄漏（memory leak）及其危害？如何处理内存泄漏问题？
+
+#### 异步
 + 什么是异步编程（asynchronous programming）？C++ 中如何实现异步编程？
-+ 解释 C++ 中的多线程同步机制，例如互斥量、信号量、读写锁等。
-+ 解释多线程中的线程安全（thread safety）和竞态条件（race condition）。
-+ C++ 中有哪些常见的并发编程模型，例如共享内存、消息传递等？
 + 什么是协程（coroutine）？它们在 C++ 中有什么应用场景？
 + 什么是异步 IO（asynchronous IO）？它在 C++ 中如何实现？解释下IO多路复用？
-+ 解释 C++ 中的内存布局（memory layout），例如栈、堆、全局变量等。
-+ 函数调用过程？
++ C++ 中有哪些常见的并发编程模型，例如共享内存、消息传递等？
+
+### 内存相关
++ 什么是内存池？
++ 解释内存泄漏（memory leak）及其危害？如何处理内存泄漏问题？
++ C++ 中的内存布局（memory layout），例如栈、堆、全局变量等。
+
+### 函数执行
++ C++ main 函数之前和之后做了什么？
 + 一个打印 "Hello World" 字符串的程序的执行过程？
+
 
 ## Data Structrure
 + 掌握 C++ 中的排序算法，例如快速排序、归并排序等。
