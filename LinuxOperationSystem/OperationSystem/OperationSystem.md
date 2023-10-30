@@ -105,3 +105,11 @@
 1. 定义一个全局或者静态对象
 2. 使用 attribute(constructor) 和 attribute((destructor)) 在 main 之前和之后执行
 3. 注册 atexit 函数在 main 函数之后执行
+
+### 结构体内存对齐
+1. 结构体变量的起始地址必须是其最宽基本类型成员大小的倍数
+2. 结构体每个成员相对于结构体起始地址的偏移量必须是其类型大小的整数倍
+3. 结构体的总大小必须是其最宽类型成员大小的倍数
+
+### 结构体内部成员相对偏移量计算
++ `(unsigned long)(&([type].[member2])) - (unsigned long)(&([type].[member1]))`

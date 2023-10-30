@@ -18,9 +18,9 @@
 + 什么是 C++ 中的强制类型转换（type casting），例如 static_cast、dynamic_cast、reinterpret_cast 等。
 + strcpy、strncpy、memcpy 的实现与区别？
 + 数组名和数组首地址的区别？
-+ 如何判断两个结构体是否相等
 + struct 和 class 的区别
 + 形参和实参的区别
++ 如何判断两个结构体是否相等
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
@@ -98,6 +98,8 @@
 + 什么是内存池？
 + 解释内存泄漏（memory leak）及其危害？如何处理内存泄漏问题？
 + C++ 中的内存布局（memory layout），例如栈、堆、全局变量等。
++ 结构体内存对齐规则
++ 结构体内部成员相对偏移量计算
 
 ### 函数执行
 + C++ main 函数之前和之后做了什么？
