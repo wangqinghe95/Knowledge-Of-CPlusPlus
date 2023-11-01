@@ -32,6 +32,7 @@
 + strlen 和 sizeof 的区别？
 + extern C 作用
 + define 和 typedef、const、函数、内联函数四者的区别
++ 全局变量和局部变量、静态全局变量的区别
 
 
 ### Oriented Object C++
