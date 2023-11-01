@@ -151,6 +151,8 @@
 + 解释 C++ 中的调试技术，例如断言（assert）和调试器（debugger）。
 + 什么是 C++ 中的动态链接库（dynamic link library，DLL）？它有什么作用？
 + 从代码到可执行程序的过程
++ 声明和定义的区别？
++ 赋值与初始化的区别？
 
 ## Test
 + 使用过代码覆盖率（code coverage）吗？
