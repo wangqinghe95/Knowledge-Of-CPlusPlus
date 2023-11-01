@@ -96,6 +96,9 @@
     4. 堆区
     5. 栈区
 
+### printf 函数执行过程
+1. [程序从加载到执行的过程](./ProcessOfProgramFromLoad2Execuate.md)
+
 ### C++ main 函数执行前后做了什么
 + main 函数执行之前，注意是为了初始化系统相关资源：
     + 设置栈指针；
