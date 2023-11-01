@@ -27,6 +27,7 @@
 + 指针参数传递和引用参数传递有什么区别？底层原理是什么？
 + 什么时候用指针当参数，什么时候用引用当参数，为什么？
 + strlen 和 sizeof 的区别？
++ extern C 作用
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
