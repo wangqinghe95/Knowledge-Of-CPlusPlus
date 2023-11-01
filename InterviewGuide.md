@@ -16,19 +16,23 @@
 + 什么是 C++ 中的类型推导（type inference），例如 auto 关键字和 decltype 关键字。
 + 什么是 C++ 中的强制类型转换（type casting），例如 static_cast、dynamic_cast、reinterpret_cast 等。
 + strcpy、strncpy、memcpy 的实现与区别？
-+ 数组名和数组首地址的区别？
 + struct 和 class 的区别
 + 形参和实参的区别
 + 如何判断两个结构体是否相等
++ 在汇编层面上解释一下引用？
++ 将引用作为函数参数的好处是什么？
 + 引用（reference）和指针（pointer）有什么区别。
 + 值传递、指针传递、引用传递的区别和效率？
-+ 将引用作为函数参数的好处是什么？
-+ 在汇编层面上解释一下引用？
++ 数组名和数组首地址的区别？
++ 数字名和指针的区别？
 + 指针参数传递和引用参数传递有什么区别？底层原理是什么？
++ 数字名和指针（数组首地址指针）区别？
++ 野指针和悬空指针的区别？
 + 什么时候用指针当参数，什么时候用引用当参数，为什么？
 + strlen 和 sizeof 的区别？
 + extern C 作用
 + define 和 typedef、const、函数、内联函数四者的区别
+
 
 ### Oriented Object C++
 + 解释 C++ 中的对象模型（object model）。
