@@ -1,18 +1,6 @@
 # C和C++的区别
 # 基础语法
 
-
-## const char* 和 string 之间是什么关系？
-+ string 是 C++ 标准库，封装了对字符串的操作，const char* 是一个指向字符常量的指针。
-+ 其中 char* 、const char* 和 string 可以相互转化
-
----
-
-## strcpy、sprintf、memcpy 这三个函数的不同之处？
-+ 操作对象不同：stcpy的两个操作对象是字符串；sprintf 操作源可以是多种数据类型，目的操作对象是字符串；memcpy的两个对象
-
----
-
 ## Debug 和 release 的区别？
 + Debug(调试版本)，包含调试信息，容量要比 release 大，没有进行优化，生成文件除了 .exe 或者 .dll 外还有一个 .pdb，该文件记录了代码中断点等调试信息；
 + Release（发布版本）：编译时对应用程序进行优化，使代码在运行速度和代码大小上都是最优的。不生成 .pdb 文件
