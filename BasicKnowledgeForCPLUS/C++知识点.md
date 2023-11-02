@@ -1,27 +1,6 @@
 # C和C++的区别
 # 基础语法
 
-
-
----
-
-## main 函数的返回值有什么考究之处的？
-+ 程序运行过程入口点 main 函数，即 main() 函数返回值类型返回值必须是 int，这样返回值才能传递给激活者(如操作系统)表示程序正常退出；
-+ main(int args, char **argv) 参数的传递一般使用 getopt() 函数去处理；
-
----
-
-## strcpy 函数和 strncpy 函数的区别？哪个更安全？
-+ 函数原型：
-    ```
-    char *strcpy(char* strDest, const char* strSrc)
-    char *strncpy(char* strDest, const char* strSrc, int pos)
-    ```
-+ strcpy 函数：如果 dest 所指的内存空间不够大，可能会造成缓冲溢出（buffer overflow）的错误；strncpy函数： 用来复制源自符的前 n 个字符，src 和 dest 所指的内存区域不能重叠，且 dest 必须有足够的空间放置 n 个字符
-+ 如果 sizeof(dest) > pos > sizeof(strSrc),则将 strSrc 全部拷贝到目标中，尾后自动加上 '\0'；如果 pos < sizeof(strSrc) ，则将源字符串按指定查昂都拷贝到目标字符串中，不包括 '\0'；如果 pos > sizeof(dest)，运行报错；
-
----
-
 ## 一致性哈希？
 + 一致性哈希是一种哈希算法，就是在移除或者增加一个结点时，能够尽可能小的改变已存在 key 的映射关系；一致性哈希将整个哈希值空间组织成一个虚拟的圆环，一致性哈希的基本思想就是使用相同的hash算法将数据和节点都映射到一个圆形哈希空间中，按照顺时针的方向，将数据绑定到离它最近的一个节点上去； 
 

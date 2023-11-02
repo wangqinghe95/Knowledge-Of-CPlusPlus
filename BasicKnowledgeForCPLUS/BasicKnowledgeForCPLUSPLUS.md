@@ -156,10 +156,10 @@
 + ifdef、endif 预处理指令，用于避免重复定义和包含，实现条件编译；
 + 使用 #define、#ifndef、#ifdef、#endif 避免头文件的重定义
 
-### strcpy 和 memcpy 的区别？
-1. 复制内容不同。strcpy 只能复制字符串，而 memcpy 复制的是一段内存区域的数据，这块内存区域可以是字符数组，整型，结构体，类
-2. 复制的方法不同。strcpy 不需要指定长度，它遇到'\0'时自动结束，容易产生溢出；而 memcpy 根据第三个参数决定复制的长度；
-3. 用途不同。复制字符串时一般使用 strcpy，复制其他类型时使用 memcpy；
+### strcpy 、strncpy 、memcpy 的区别？
+1. 复制内容不同。strcpy，strncpy 只能复制字符串，而 memcpy 复制的是一段内存区域的数据，这块内存区域可以是字符数组，整型，结构体，类
+2. 复制的方法不同。strcpy 不需要指定长度，它遇到'\0'时自动结束，容易产生溢出；strncpy 复制指定数量的字符，而 memcpy 根据第三个参数决定复制的长度；
+3. 用途不同。复制字符串时一般使用 strcpy，strncpy，复制其他类型时使用 memcpy；
 
 ### printf、sprintf、ssprintf 的区别
 1. printf 将格式化的数据输出到标准输出流中，并返回输出的字符数
