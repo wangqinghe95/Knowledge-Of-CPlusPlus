@@ -1,13 +1,6 @@
 # C和C++的区别
 # 基础语法
 
-
-## ifdef、endif 代表着什么？
-+ ifdef、endif 实现了条件编译的需求；
-+ 使用 #define、#ifndef、#ifdef、#endif 避免头文件的重定义
-    
----
-
 ## strcpy 和 memcpy 的区别？
 + 复制内容不同。strcpy 只能复制字符串，而 memcpy 可以复制任意内容，例如字符数组、整型、结构体、类；
 + 复制的方法不同。strcpy 不需要指定长度，它遇到'\0'时自动结束，容易产生溢出；而 memcpy 根据第三个参数决定复制的长度；
