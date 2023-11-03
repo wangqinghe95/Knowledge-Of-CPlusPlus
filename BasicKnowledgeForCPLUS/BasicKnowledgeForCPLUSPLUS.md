@@ -51,6 +51,10 @@
 + const_cast
     - 用来修改表达式的 const 和 volatile 属性
 
+### static_cast 比 C 中的强制转换有什么优势？
+1. 更加安全，static_cast 在编译时会进行编译检查，如果类型转换不合法会报错，避免了类型转换错误的发生
+2. 更加直观，能够清楚的看出代码中转换的类型，可读性更强
+
 ### C++ nullptr 和 NULL 有什么区别？
 + NULL 整型 0
 + nullptr 指针 0
