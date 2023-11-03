@@ -60,6 +60,11 @@
         - 大很多：重新开辟新空间，将旧空间内容拷贝到新空间去，释放旧空间，返回新空间的首地址；
     + 调整空间比原有空间小：将原有空间缩小，返回旧地址空间首地址
 
+### malloc、realloc、calloc 的区别
+1. malloc 在堆上额分配指定指定字节数的存储区，该存储区的初始值不确定，需要 memset 处理
+2. realloc 更改之前分配区的长度，可以对给定的指针所指的空间进行扩大或者缩小，原有内存内容保持不变
+3. calloc 分配指定字节大小的存储区，会初始化分配的内存空间为零
+
 ## new/delete
 
 ### new
@@ -114,5 +119,30 @@ void operator delete(void *, void *) throw();            // placement
     + 从第一个对象空间之前的 4 个字节中读取对象的个数 N
     + 在释放的对象上执行 N 次析构函数，完成 N 个对象中资源的清理
     + 调用 void operator delete[](void* p) 释放空间，实际在 operator delete[] 中调用 operator delete 释放内存
+
+## new/delete 和 malloc/free 的区别？（new 和 malloc 的区别？）
++ 类型不同：new/delete 是关键字，需要编译器支持；malloc/free 是库函数，需要头文件支持；
++ 参数不同：new 申请内存分配时无需指定内存块大小，编译器会根据类型信息自行计算。而 malloc 则需要显示地指出所需内存的大小；
++ 返回结果不同：new 内存申请成功后返回时对象类型的指针；malloc 返回的是 void*，需要通过强制类型转换将 void* 转换成需要的类型；
++ 内存分配失败返回结果不同：new 内存返回失败会抛出异常，malloc 内存分配失败返回 NULL；
++ 申请用户自定义类过程不同：new 会调用 operator new 函数，申请足够的内存，然后调用该类型的构造函数，进行初始化成员变量，最后返回自定义类型指针，delete 会先调用析构函数，然后再调用 operator delete 函数释放内存。malloc/free 只能实现动态的申请和释放内存，无法强制要求对其做自定义类型对象构造和析构函数。
+
+## new 和 delete 是实现过程？
++ new 简单类型直接调用 operator new 分配内存；
++ new 复杂结构时表达式会调用 operator new(operator new[]) 函数，分配一块足够大的、原始的、未命名的内存空间；
++ 编译器运行相应的构造函数构造这些对象，并为其传入初始值；
++ 对象被分配了空间并构造完成，返回一个指向该对象的指针；
+
+## delete 是如何知道要释放内存的大小？
++ delete 简单数据类型时只是调用了 free 函数，且此时 delete 和 delete[] 等同；
++ delete 复杂类型时先调用析构函数，再调用 operator delete；
+
+
+## malloc 申请的空间能用 delete 释放吗？
++ 理论上来说是可以的，但是由于 malloc/free 操作对象都是明确大小的，而且是不能用在动态类上，与此同时 new 和 delete 会自动进行类型检查和大小，malloc/free 不能执行构造函数和析构函数，所以不建议使用 delete 去释放 malloc 分配的空间，因为这样不能保证每个 C++ 程序运行时都正常；
+
+## delete 和 delete [] 的区别？（delete、delete []、alloctor 有什么作用？）
++ delete 和 delete[] 的区别主要是在于对非内部数据对象的处理上，delete 只能调用一次非内部数据对象的析构函数，而 delete[] 会调用数组的每一个成员的析构函数；
++ new 的机制是将内存分配和对象构造组合在一起，delete 也是将对象的析构函数和内存释放组合在一起了，allocator 是将这两部分分开了，allocator 申请一部分内存，但是不进行初始化，只有当需要的时候才进行初始化操作；
 
 

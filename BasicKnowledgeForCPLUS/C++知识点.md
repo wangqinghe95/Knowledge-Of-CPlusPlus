@@ -1,56 +1,5 @@
 # C和C++的区别
 
-## malloc 和 free 实现的原理？
-+ malloc/free 函数在底层是由 brk、mmap、munmap 这些系统调用实现；
-+ malloc 是从堆中申请内存。操作系统中有一个记录空闲内存地址的链表，操作系统收到程序的申请时，会遍历该链表，然后找到第一个空间大于所申请空间的堆节点，然后把该节点从链表中删除，并把该节点的空间分配给程序；
-
----
-
-## malloc、realloc、calloc 区别？
-+ calloc 会对申请的空间初始化为0， 但是其他两个不会；
-+ malloc 申请的空间必须用 memset 初始化；
-+ realloc 是对已有的内存空间进行调整，可能会重新开辟内存空间并且释放原有内存空间。
-
----
-
-## new/delete 和 malloc/free 的区别？（new 和 malloc 的区别？）
-+ 类型不同：new/delete 是关键字，需要编译器支持；malloc/free 是库函数，需要头文件支持；
-+ 参数不同：new 申请内存分配时无需指定内存块大小，编译器会根据类型信息自行计算。而 malloc 则需要显示地指出所需内存的大小；
-+ 返回结果不同：new 内存申请成功后返回时对象类型的指针；malloc 返回的是 void*，需要通过强制类型转换将 void* 转换成需要的类型；
-+ 内存分配失败返回结果不同：new 内存返回失败会抛出异常，malloc 内存分配失败返回 NULL；
-+ 申请用户自定义类过程不同：new 会调用 operator new 函数，申请足够的内存，然后调用该类型的构造函数，进行初始化成员变量，最后返回自定义类型指针，delete 会先调用析构函数，然后再调用 operator delete 函数释放内存。malloc/free 只能实现动态的申请和释放内存，无法强制要求对其做自定义类型对象构造和析构函数。
-
----
-
-## new 和 delete 是如何实现的？（delete 是如何知道要释放内存的大小？）
-+ new 简单类型直接调用 operator new 分配内存；
-+ new 复杂结构时表达式会调用 operator new(operator new[]) 函数，分配一块足够大的、原始的、未命名的内存空间；
-+ 编译器运行相应的构造函数构造这些对象，并为其传入初始值；
-+ 对象被分配了空间并沟站完成，返回一个指向该对象的指针；
-
-+ delete 简单数据类型时只是调用了 free 函数，且此时 delete 和 delete[] 等同；
-+ delete 复杂类型时先调用析构函数，再调用 operator delete；
-
----
-
-## malloc 申请的空间能用 delete 释放吗？
-+ 理论上来说是可以的，但是由于 malloc/free 操作对象都是明确大小的，而且是不能用在动态类上，与此同时 new 和 delete 会自动进行类型检查和大小，malloc/free 不能执行构造函数和析构函数，所以不建议使用 delete 去释放 malloc 分配的空间，因为这样不能保证每个 C++ 程序运行时都正常；
-
----
-
-## delete 和 delete [] 的区别？（delete、delete []、alloctor 有什么作用？）
-+ delete 和 delete[] 的区别主要是在于对非内部数据对象的处理上，delete 只能调用一次非内部数据对象的析构函数，而 delete[] 会调用数组的每一个成员的析构函数；
-+ new 的机制是将内存分配和对象构造组合在一起，delete 也是将对象的析构函数和内存释放组合在一起了，allocator 是将这两部分分开了，allocator 申请一部分内存，但是不进行初始化，只有当需要的时候才进行初始化操作；
-
----
-
-## C++ 有几种类型的 new？
-+ palin new:最常用的 new 函数，申请空间失败抛出异常
-+ nothrow new：申请失败返回 NULL
-+ placement new：在一块已经开辟的空间上构造对象，需要显示的调用析沟函数去销毁，不能使用 delete，否则可能会造成内存泄漏或者运行错误
-
----
-
 ## C++ 中 NULL 和 nullptr 的区别？
 + NULL 是宏定义，而 nullptr 是关键字；
 + C 语言中的 NULL 被定义为 (void*)0, C++ 中 NULL 被定义为 0；所以在传入 NULL 参数时会把 NULL 当作整数零来看待，为了和调用参数时指针函数区分开，引入 nullptr
