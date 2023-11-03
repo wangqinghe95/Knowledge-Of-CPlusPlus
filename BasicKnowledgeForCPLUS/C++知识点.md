@@ -1,12 +1,5 @@
 # C和C++的区别
 
-## auto、decltype 和 decltype(auto) 的用法？
-+ auto： C++ 新标准引入 auto 说明符，用它就能让编译器替我们去分析表达式所属类型。auto 让编译器通过初始值进行类型推演，从而获得定义变量的类型，auto 必须要有初始值
-+ decltype：选择并返回操作数的数据类型，在此过程中，编译器只是分析表达式并得到它的类型，并不去计算实际的表达式的值。
-+ decltype(auto):C++14 新增的类型指示符，可以用来生命变量以及指示函数返回类型。在使用时会将"="号左边的表达式替换调 auto，再根据 decltype 的语法规则来确定类型；
-
----
-
 ## C++ 四种强制转换 reinterpret_cast/const_cast/static_cast/dynamic_cast 用法？
 + reinterpret_cast：用于类型之间进行强制转换；
 + const_cast：用来修改类型的 const 和 volatile 属性；
