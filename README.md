@@ -8,27 +8,12 @@
 
 ## Content
 + [InterviewGuide](./InterviewGuide.md)
-
-### C++基础知识点
-1. 面向过程 C++
-2. 面向对象 C++
-3. 泛型编程
-4. STL
-5. C++11 新特性
-### 数据结构
-
-### Linux 操作系统
-1. Linux 工具
-    + GDB
-    + Vim
-    + Shell
-2. 操作系统
-
-### 计算机网络
-
-### 设计模式
-
-### 编译原理
++ [C++ 知识点](./BasicKnowledgeForCPLUS/README.md)
++ [数据结构](./DataStructure/README.md)
++ [Linux 操作系统](./LinuxOperationSystem/README.md)
++ [计算机网络](./ComputerNetwork/README.md)
++ [设计模式](./DesignPattern/README.md)
++ [编译原理](./Compiler/README.md)
 
 ---
 
