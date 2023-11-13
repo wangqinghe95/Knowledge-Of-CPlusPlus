@@ -1,4 +1,4 @@
-# DataStruct
+# DataStructure
 
 ## 数据结构
 ### 什么是数据结构（data structure）？C++ 中常见的数据结构有哪些？
