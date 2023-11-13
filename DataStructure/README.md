@@ -15,7 +15,6 @@
 ## 树相关
 ### [平衡二叉树](./AVL.cpp)
 ### [建树](./createTree.cpp)
-+ 先序中序建树，中序后序建树
 ### [中序遍历二叉树](./inorderTraversal.cpp)
 ### [层次遍历二叉树](./levelOrder.cpp)
 ### [后序遍历二叉树](./postorderTraversal.cpp)
