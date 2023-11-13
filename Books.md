@@ -11,6 +11,8 @@
 | File | Author | Status | Link |
 | --- | --- | --- | --- |
 | C++ Primer Plus (6th Edition) |  Stanley B. Lippman, Josée Lajoie, and Barbara E. Moo | Doing | [C++ Primer Plus Notes](https://github.com/wangqinghe95/CPlusPlus-Primer-Plus) |
+| 深入理解 C++11 | Michael Wong && IBM 编译器中国团队 | Doing | None |
+| 科学之美 | David Orrell（著）/ 潘志刚（译）| Doing | None |
 
 ## TODO
 
