@@ -1,13 +1,21 @@
 # C++知识点
 
-## Abstract
-1. 文件夹下的 README.md 文件记录当前文件夹的文件的目录
-2. 文件夹下的同名文件是文件名所有关的问题条目
+|Date|Version|Description|Status|Author|
+|---|---|---|---|---|
+| 11/13/2023 | 1.0 | C++ 基础知识清单整理 | Done | Matthew |
 
----
+## Introduction
+### Done
+1. 1.0 版本完成知识清单的整理，分类，搜索并撰写答案工作
+2. 2.0 版本需要从相关书籍中整理清单答案
+
+## Interview
+1. C++ 知识清单
+    + [InterviewGuideForC++](./InterviewGuideForC++.md)
+2. 清单生成脚本
+    + [A Script for generating InterviewGuideForC++](./Interview/Interview.py)
 
 ## Content
-+ [InterviewGuide](./InterviewGuide.md)
 + [C++ 知识点](./BasicKnowledgeForCPLUS/README.md)
 + [数据结构](./DataStructure/README.md)
 + [Linux 操作系统](./LinuxOperationSystem/README.md)
@@ -15,17 +23,11 @@
 + [设计模式](./DesignPattern/README.md)
 + [编译原理](./Compiler/README.md)
 
----
-
 ## Books
 + [书单](./Books.md)
-
----
 
 ## Program
 + [项目](./Project.md)
 
----
-
-## 计算机发展历史
+## C/C++ 语言发展历史
 + [计算机发展的简单介绍](https://www.zhihu.com/question/27639400)

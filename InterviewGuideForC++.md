@@ -229,7 +229,7 @@
 13. 堆和栈的区别？
 14. 如何用代码判断大小端存储？
 
-## [DataStruct](DataStructure/DataStructure.md)
+## [DataStructure](DataStructure/DataStructure.md)
 ### 数据结构
 1. 什么是数据结构（data structure）？C++ 中常见的数据结构有哪些？
 2. 时间复杂度和空间复杂度
