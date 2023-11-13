@@ -22,7 +22,8 @@
 + O(n^2) 表示算法运行时间与输入规模 n 与 n^2 成正比
 
 ### 树相关
-##  什么是红黑树（red-black tree）？它有什么作用？
+
+## 什么是红黑树（red-black tree）？它有什么作用？
 + 概念
     + 红黑树是一种自平衡的二叉查找树，通过一些性质的定义，将任意节点的左右子树高度差控制在一定范围内，以达到平衡状态。
 + 性质
@@ -164,21 +165,21 @@
 
 ---
 
-## 掌握 C++ 中的排序算法，例如快速排序、归并排序等。
-### [快速排序](./quickSort.cpp)
-### [归并排序](./mergeSort.cpp)
-### [冒泡排序](./bubbleSort.cpp)
-### [堆排序](./heapSort.cpp)
-### [选择排序](./selectSort.cpp)
-### [希尔排序](./shellSort.cpp)
-### [插入排序](./insertSort.cpp)
+## 掌握 C++ 中的排序算法
++ [快速排序](./quickSort.cpp)
++ [归并排序](./mergeSort.cpp)
++ [冒泡排序](./bubbleSort.cpp)
++ [堆排序](./heapSort.cpp)
++ [选择排序](./selectSort.cpp)
++ [希尔排序](./shellSort.cpp)
++ [插入排序](./insertSort.cpp)
 
-## 掌握 C++ 中的查找算法，例如二分查找、哈希表等。
-### [二分查找](./binaryTree.cpp)
-### [建树](./createTree.cpp)
-### [中序遍历二叉树](./inorderTraversal.cpp)
-### [层次遍历二叉树](./levelOrder.cpp)
-### [后序遍历二叉树](./postorderTraversal.cpp)
-### [先序遍历二叉树](./preorderTraversal.cpp)
-### [平衡二叉树](./AVL.cpp)
+## 掌握 C++ 中的查找算法
++ [二分查找](./binaryTree.cpp)
++ [建树](./createTree.cpp)
++ [中序遍历二叉树](./inorderTraversal.cpp)
++ [层次遍历二叉树](./levelOrder.cpp)
++ [后序遍历二叉树](./postorderTraversal.cpp)
++ [先序遍历二叉树](./preorderTraversal.cpp)
++ [平衡二叉树](./AVL.cpp)
 
