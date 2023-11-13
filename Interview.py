@@ -8,7 +8,7 @@ def checkFolderOrFileExisted(name):
         return False
 
 def reviewFile(name):
-    write_file_name = name + '_interview.md'
+    write_file_name = 'Interview/' + name + '_interview.md'
     write_file_fd = open(write_file_name, 'w', encoding='utf-8');
     
     read_file = name + '/' + name + '.md'
