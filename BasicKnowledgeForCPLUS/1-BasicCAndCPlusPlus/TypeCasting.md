@@ -14,11 +14,11 @@
 + 用于类层次结构中基类和派生类之间指针或引用的转换；
     + 进行上行转换（把派生类指针或引用转换成基类）是安全的；
     + 进行下行转换（把基类指针或引用转换成派生类表示）时，由于没有动态类型检查，所以是不安全的；
-+ 用于基本数据类型开发的转换（int=》char、int=》enum），这种安全性也是需要开发人员保证
++ 用于基本数据类型开发的转换（int=>char、int=>enum），这种安全性也是需要开发人员保证
 + 把空指针转换成目标类型的空指针
 + 把任何类型的表达式转换成 void 类型
 
-    **注意：static_cast 不能转换掉 expression 的const、volatile、或者 _unaligned 属性**
+**注意：static_cast 不能转换掉 expression 的const、volatile、或者 _unaligned 属性**
 
 ## dynamic_cast：有类型检查，基类向派生类转换比较安全，但派生类转基类不太安全；
 + dynamic_cast<type-id>(expression)：该运算符把 expression 转换成 type-id 类型的对象
