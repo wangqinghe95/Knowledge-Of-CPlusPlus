@@ -13,8 +13,8 @@ From June in 2014(twenty fourteen) to 2018(twenty eighteen), I studied Network E
 After graduating, I worked at Hangzhou ShenHao Technology Company Limited where I focus on C/C++ development for robotics. From July 2020 to October 2021 I served as a C++ developer at Kylin Software Company Limited, working on a productivity software called zhongbiaopuhua, which is based on the open-source library libreoffice. In November 2021, I joined Aptiv and participated in the development of intelligent cockpit modules, including Camera, Radar, and Tuner.
 
 ### Advantage and Disadvantage
-1. I am extroverted, so my communication skills are quite good, I am more enthusiastic and cheerful, and I also like to learn some new things.
-2. However, compared with my friends, I might be slightly less patient and attentive. Therefore, when handling tasks, I holds myself to the standard of double-checking. For important matters or those involving others, I also seek assistance from someone else to prevent any inadverent oversights that could impact others.
+1. I am extroverted, so my communication skills are quite good. Besides, I am more enthusiastic and cheerful, and I also like learning some new things and writing records and summary articles.
+2. Sometimes, because I am too enthusiastic, I will not do my own things very well. Therefore, I have tried to limit my enthusiasm to a certain range in the last two years, such as things related to myself.
 
 ### What hobbies do you usually have ?
 1. I swim a lot, as company helps us get a gym membership card, where I taught myself to swim last year.
@@ -46,34 +46,20 @@ After graduating, I worked at Hangzhou ShenHao Technology Company Limited where 
 <div style="page-break-after: always;"></div>
 
 ## Reasons for resignation
+### 前两次离职原因
+1. 第一次离职是因为当时的薪资太低了，扣除租房和吃饭的花销后，工作一年之后的我几乎没有任何积蓄。所以只能换一份能够让我生活更稳定的工作。
+2. 第二次离职单纯的因为当时部门领导想让我去做前端工作，比如 web 网页开发，我对此并不是很兴趣，所以就协商离职了。
 
-### The reason why I leave from my first job.
-1. My first job was paid so little， about 5000, that I have no saving other than renting or eating. I need to switch to a higher job to make my life more secure.
+### 为什么会换这么多城市
+1. 我始终认为一个人在人生的每个阶段都有每个阶段应该去做的事。比如 在 24 岁就应该多去看看世界，在 27 岁可以考虑自己的未来的职业规划，30 岁的时候，需要多为亲人计划一下，父母，未来的伴侣，甚至是孩子。所以我 24 岁的时候带着极大的热情去了北京扩展眼界，26 岁的时候来到苏州规划职业生涯，而现在将近 30 岁的时候，想要平衡一下家里老人和工作的权重，这也是为什么我面试大众的原因，如果我能在合肥的大众工作，这将是我最优的人生选择。
 
-### The reason why I came to Beijing
-1. In the first 20 years of my life, I rarely had the opportunity to venture beyond my hometown and the city where I pursued my eduction. When I turned 24, I made a decision to explore Beijing. At that time, I still possessed ample enthusiasm to discover new experiences, witness unfamiliar landscapes and encounter people I had never met before.
+### 这次换工作的原因
+1. 我想要尽可能的多陪陪老家的祖父母，所以想去合肥。
+2. 大众是作为全球最优秀的汽车公司之一，当然是许多人想进的公司，包括我。
 
-### The reason why I leave from my second job.
-1. At that time, my department manager was planning to develop a new product, a project for online document storage. He asked me to work on front-end development, but I was't interested in it. Nevertheless, I helped them complete the initial version adn then decided to resign.
+## 职业规划？
+1. 在制造业，特别是汽车行业，做软件开发是我的深耕方向，因为能看到自己写的代码能跑在路上是一件非常有成就感的事情。
 
-### The reason why I leave from Beijing.
-1. At this time, I chose to go to Beijing because I wanted to broaden my horizons, meet new friends in a slightly distant places, and see what the northern part of our country looks like. After a year of a half, I achieved my goal. Life in Beijing was very hectic, far from home, and there was no opportunity to settle there, so I decided to leave when the opportunity to change jobs arose.
-
-### The reason why I came to Suzhou
-1. I have a good friend at Aptiv, and he helped me with an internal refernal for my resume. Many people from my hometown also work in Suzhou, including my aunt and some of my middle school classmates. It's not too far from home, about a 3-hours high-speed train ride, and I can go back home during the three-day hoildays.
-
-### The reason why do you want to change work this time?
-1. The first reason is that I need to switch to a job closer to home so that I can spend as much time as possible with my grandparents, who are quite elderly. 
-2. Secondly, Hefei is a city that is reasonably suitable for me to settle down in, it's close to home, and property prices are acceptable. 
-3. Thirdly, Volkswagen is a great company, and if I can join Volkswagen, I won't have to change jobs, houses, or cities anymore. 
-4. In fact, during my last job search, I already saw opportunities in Heifei, but at that time, I didn't find a suitable one.
-
-### The reason why you choose Volkswagen.
-1. First HeFei is a suitable city for me to settle down in, as I said before, it's close to home, and property prices are acceptable.
-2. Second, I am very willing to work with excellent people, as one of the best automobile in the world, employees who can work in Volkswagen have at least some excellent aspects to learn from.
-3. Finally, if I have the opportunity to join Volkswagen, I won't have to worry about changing jobs, houses, or cities anymore.
-
-<div style="page-break-after: always;"></div>
 
 ## 介绍
 
@@ -88,8 +74,8 @@ Ok，首先做个自我介绍
 毕业以后，我在杭州申昊科技有限责任公司工作，专注于 C/C++ 机器人开发。2020 年 7 月到 2021 年 10 月，我在麒麟软件有限公司担任 C++ 开发工程师，致力于一款名为 Zhongbiaopuhua 的办公软件的开发，它基于开源库 libreoffice 。2021 年 11 月，我加入 Aptiv，并参与智能座舱相关模块的开发，包括 Camera，Radar，和 Tuner。
 
 ### 优点和缺点
-1. 我是一个偏外向的人，所以沟通技能还不错，为人比较热心和开朗，也比较喜欢接触一些新的知识。
-2. 相较于我的朋友，我可能稍显不够耐心和细心。因此，在处理事务时，我会自我要求多检查两遍。对于重要的事情或涉及其他人的事务，我还会请其他人帮忙检查，以防我的粗心会影响到他人。
+1. 我是一个偏外向的人，所以沟通技能还不错，为人比较热心和开朗，也比较喜欢接触一些新的知识，写一些记录和总结的文章。
+2. 有时候会因为太过热情会导致我自己的事情完成的不是很好，所以我最近两年都是尽量将热情限制在一定范围内，比如和自己相关的事情。
 
 ### 平时有什么兴趣爱好
 1. 我经常游泳，因为公司帮助我们办理健身房的会员卡，去年在那里我自学了游泳
@@ -122,28 +108,16 @@ Ok，首先做个自我介绍
 <div style="page-break-after: always;"></div>
 
 ## 离职原因
-### 第一次离职的原因
-1. 我的第一份工作的薪水非常低，除了租房和吃饭，我几乎没有存款。我需要转换到一份更高薪的工作，以确保我的生活更加稳定。
+### 前两次离职原因
+1. 第一次离职是因为当时的薪资太低了，扣除租房和吃饭的花销后，工作一年之后的我几乎没有任何积蓄。所以只能换一份能够让我生活更稳定的工作。
+2. 第二次离职单纯的因为当时部门领导想让我去做前端工作，比如 web 网页开发，我对此并不是很兴趣，所以就协商离职了。
 
-### 去北京的原因
-1. 在我生命的前 20 年里，我很少有机会去除了家乡和我求学的城市，所以在我 24 岁的那年，我选择了去北京，因为那个时候我还有足够的热情去探索新事物，去看我未见过的风景和人物。
-
-### 第二次离职的原因
-1. 当时，我的部门经理计划开发一款新产品，一个用于在线存储文档的项目。他要求我从事前端开发的工作，但我对此并不感兴趣。尽管如此，我还是帮助他们完成了初版，之后选择离职了。
-
-### 从北京离开的原因
-1. 我当时选择去北京的原因就是想涨涨见识，去一个稍远的地方认识一些新的朋友，看看祖国的北方是什么样子。一年半后，我的目标也实现了。北京的生活非常匆忙，离家也很远，而且没有机会在那里定居，所以我选择乘着换工作的机会离开了北京
-
-### 选择去苏州的原因
-1. 我有个好朋友在 Aptiv，他帮我内推了简历。我老家有很多人都在苏州这边工作，包括我的舅妈，我初中的同学。离家也不是很远，坐高铁大概 3 个小时左右，三天的节假日都可以回去。
+### 为什么会换这么多城市
+1. 我始终认为一个人在人生的每个阶段都有每个阶段应该去做的事。比如 在 24 岁就应该多去看看世界，在 27 岁可以考虑自己的未来的职业规划，30 岁的时候，需要多为亲人计划一下，父母，未来的伴侣，甚至是孩子。所以我 24 岁的时候带着极大的热情去了北京扩展眼界，26 岁的时候来到苏州规划职业生涯，而现在将近 30 岁的时候，想要平衡一下家里老人和工作的权重，这也是为什么我面试大众的原因，如果我能在合肥的大众工作，这将是我最优的人生选择。
 
 ### 这次换工作的原因
-1. 第一个原因是我需要换一个离家更近的工作以便于尽可能多的陪伴祖父母，他们年纪已经很大了。 
-2. 第二，就是合肥是一个还算适合我定居的城市，离家够近，房价还能接受。
-3. 第三，大众是一个很好的公司，如果我能加入大众应该就不用在换工作，换房子，换城市了。
-4. 实际上,上次找工作的时候已经看到合肥的机会了，但那个时候没有找到合适的机会。
+1. 我想要尽可能的多陪陪老家的祖父母，所以想去合肥。
+2. 大众是作为全球最优秀的汽车公司之一，当然是许多人想进的公司，包括我。
 
-### 选择大众的原因
-1. 首先，合肥是一个很适合我定居的城市，就像我以前说的，离家够近，房价也能接受。
-2. 再次，我很愿意和优秀的人一起工作。作为全球最好的汽车公司之一，在大众工作的员工至少都有优秀的一面值得我学习。
-3. 最后，如果能有幸加入大众，我就不用再因为换工作，换房子，换城市而焦虑了。
+## 职业规划？
+1. 在制造业，特别是汽车行业，做软件开发是我的深耕方向，因为能看到自己写的代码能跑在路上是一件非常有成就感的事情。
