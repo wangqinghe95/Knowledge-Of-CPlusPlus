@@ -46,20 +46,26 @@ After graduating, I worked at Hangzhou ShenHao Technology Company Limited where 
 <div style="page-break-after: always;"></div>
 
 ## Reasons for resignation
-### 前两次离职原因
-1. 第一次离职是因为当时的薪资太低了，扣除租房和吃饭的花销后，工作一年之后的我几乎没有任何积蓄。所以只能换一份能够让我生活更稳定的工作。
-2. 第二次离职单纯的因为当时部门领导想让我去做前端工作，比如 web 网页开发，我对此并不是很兴趣，所以就协商离职了。
 
-### 为什么会换这么多城市
-1. 我始终认为一个人在人生的每个阶段都有每个阶段应该去做的事。比如 在 24 岁就应该多去看看世界，在 27 岁可以考虑自己的未来的职业规划，30 岁的时候，需要多为亲人计划一下，父母，未来的伴侣，甚至是孩子。所以我 24 岁的时候带着极大的热情去了北京扩展眼界，26 岁的时候来到苏州规划职业生涯，而现在将近 30 岁的时候，想要平衡一下家里老人和工作的权重，这也是为什么我面试大众的原因，如果我能在合肥的大众工作，这将是我最优的人生选择。
+### Reasons for the first two departures
+1. The first time I left was because the salary was too low at that time. After deducting the expenses of renting and eating, I had almost no savings after working for a year. So I can only change to a job that can make my life more stable.
+2. The second time I left was just because the department leader wanted me to do front-end work, such as web development. I was not very interested in it, so I negotiated to leave.
 
-### 这次换工作的原因
-1. 我想要尽可能的多陪陪老家的祖父母，所以想去合肥。
-2. 大众是作为全球最优秀的汽车公司之一，当然是许多人想进的公司，包括我。
+### Why did you change so many city jobs
+1. I always think that a person has something he should do at every stage of his life. For example, one should see the world more at the age of 24.  and can consider your future career plan at the age of 27, as well as at the age of 30, he need to make more plans for your relatives, such as parents, future partners, and even children.
+2. So I was 24 years old with great enthusiasm to expand Beijing, 26 came to Suzhou to plan my career, and now nearly 30, want to balance the weight of the family and work, which means that I want to spend more time with my grandparents. If I choose a job in Heifei, it only takes me 2 hours to back to home.
 
-## 职业规划？
-1. 在制造业，特别是汽车行业，做软件开发是我的深耕方向，因为能看到自己写的代码能跑在路上是一件非常有成就感的事情。
+### The reason for this job change
+1. I want to spend as much time with my grandparents in my hometown, so I want to go to Hefei.
+2. Volkswagen is one of the best car companies in the world, and of course it is a company that many people want to enter, including me.
 
+## What is your career plan
+1. In the manufacturing industry, especially the automobile industry, software development is my deep direction, because it is very fulfilling to see that my code can run on the road.
+
+## Others
+1. I was preparing for my postgraduate exam
+
+<div style="page-break-after: always;"></div>
 
 ## 介绍
 
@@ -113,7 +119,7 @@ Ok，首先做个自我介绍
 2. 第二次离职单纯的因为当时部门领导想让我去做前端工作，比如 web 网页开发，我对此并不是很兴趣，所以就协商离职了。
 
 ### 为什么会换这么多城市
-1. 我始终认为一个人在人生的每个阶段都有每个阶段应该去做的事。比如 在 24 岁就应该多去看看世界，在 27 岁可以考虑自己的未来的职业规划，30 岁的时候，需要多为亲人计划一下，父母，未来的伴侣，甚至是孩子。所以我 24 岁的时候带着极大的热情去了北京扩展眼界，26 岁的时候来到苏州规划职业生涯，而现在将近 30 岁的时候，想要平衡一下家里老人和工作的权重，这也是为什么我面试大众的原因，如果我能在合肥的大众工作，这将是我最优的人生选择。
+1. 我始终认为一个人在人生的每个阶段都有每个阶段应该去做的事。比如 在 24 岁就应该多去看看世界，在 27 岁可以考虑自己的未来的职业规划，30 岁的时候，需要多为亲人计划一下，父母，未来的伴侣，甚至是孩子。所以我 24 岁的时候带着极大的热情去了北京扩展眼界，26 岁的时候来到苏州规划职业生涯，而现在将近 30 岁的时候，想要平衡一下家里老人和工作的权重，意思是我想多花点时间陪陪祖父母，如果我选择在合肥工作，只需要2小时我就能回到家。
 
 ### 这次换工作的原因
 1. 我想要尽可能的多陪陪老家的祖父母，所以想去合肥。
@@ -121,3 +127,6 @@ Ok，首先做个自我介绍
 
 ## 职业规划？
 1. 在制造业，特别是汽车行业，做软件开发是我的深耕方向，因为能看到自己写的代码能跑在路上是一件非常有成就感的事情。
+
+## 其他
+1. 那时我正在准备研究生考试
