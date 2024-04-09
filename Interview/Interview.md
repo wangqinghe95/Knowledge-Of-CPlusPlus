@@ -52,7 +52,7 @@ After graduating, I worked at Hangzhou ShenHao Technology Company Limited where 
 2. The second time I left was just because the department leader wanted me to do front-end work, such as web development. I was not very interested in it, so I negotiated to leave.
 
 ### Why did you change so many city jobs
-1. I always think that a person has something he should do at every stage of his life. For example, one should see the world more at the age of 24.  and can consider your future career plan at the age of 27, as well as at the age of 30, he need to make more plans for your relatives, such as parents, future partners, and even children.
+1. I always think that a person has something he should do at every stage of his life. For example, one can see the world more at the age of 24.  and  consider his future career plan at the age of 27, as well as at the age of 30, should make more plans for his relatives, such as parents, future partners, and even children.
 2. So I was 24 years old with great enthusiasm to expand Beijing, 26 came to Suzhou to plan my career, and now nearly 30, want to balance the weight of the family and work, which means that I want to spend more time with my grandparents. If I choose a job in Heifei, it only takes me 2 hours to back to home.
 
 ### The reason for this job change
