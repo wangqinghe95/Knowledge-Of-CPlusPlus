@@ -14,7 +14,7 @@ After graduating, I worked at Hangzhou ShenHao Technology Company Limited where 
 
 ### Advantage and Disadvantage
 1. I am extroverted, so my communication skills are quite good. Besides, I am more enthusiastic and cheerful, and I also like learning some new things and writing records and summary articles.
-2. Sometimes, because I am too enthusiastic, I will not do my own things very well. Therefore, I have tried to limit my enthusiasm to a certain range in the last two years, such as things related to myself.
+2. Sometimes, because I am too enthusiastic, I will not do my own things very well. So, in the last two years, I have tried to limit my enthusiasm to a certain range, such as things related to myself.
 
 ### What hobbies do you usually have ?
 1. I swim a lot, as company helps us get a gym membership card, where I taught myself to swim last year.
@@ -23,13 +23,6 @@ After graduating, I worked at Hangzhou ShenHao Technology Company Limited where 
 <div style="page-break-after: always;"></div>
 
 ## Projects
-### Robot Development in Hangzhou ShenHao Technology Company Limted
-1. At Hangzhou ShenHao Technology Company Limted，I work on robot-related development using C/C++. Specifically, I develop backend programs to control robots under the Ubuntu operating system. 
-2. When this program starts, it first read task and waypoint information from the databse. Then it controls the robot to move to specified positions and perform specific tasks, such as taking photos, measuring temperatures, and detecting gas leaks. The results of tasks are saved back to the database. Finally, the robot proceeds to the next task point until all tasks are completed, returning to its initial position for rechargin and awaiting the next automatic or manual activation.
-
-### Office Software Development in Kylin Software Company
-1. In Kylin Software Company, The projects that our department is reponsible for is an office software called Zhongbiaopuhua Office Software. This software is based on an open-source software called LibreOffice and has undergone secondary development. We are using C++11 to migrate the functionality from the old version to the new version currently under development.
-2. As a develpoer working on text styles within documents, I am responsible for handing various aspects of text, such as underlining, color, and size.
 
 ### Intelligent cockpit Development in Aptiv
 1. At Aptiv, I am reponsible for developing features related to the intelligent cabin, including Camera, Radio and Radio.
@@ -37,6 +30,14 @@ After graduating, I worked at Hangzhou ShenHao Technology Company Limited where 
 3. In the QNX system, numerous service processes run, including Camera and Tuner. Request coming from Android are distributed to these service process for handling tasks such as reading/writing configuration parameters and invoking hardware devices. The results of these operations are returned along the calling path to the upper-level caller. Based on the outcome, different pages, icons or prompts are displayed on the user-interaction screen.
 4. Radar is a sub-moudle of Camera. In the QNX system, I was responsible for developing the service processes for both of these modules. The Radar module includes features such as radar icon and display and reverse distance display, while the Camera module encompasses functionalities like 360-degree surround view and reversing imaging.
 5. The Camera development work, or rather maintenance work, has been under my responsible for less than a year due to the departure of my colleague who was in charge of the Tuner. I have been handling the Tuner since then. The Tuner functionality is relatively straightward, so I am solely responsible for all aspects, including Android's Frameworks layer, HAL layer, and QNX-side service programs. Requests initiated by the radio application are processed through the Frameworks service process, then pass through the HAL layer service process, and finally are received by the QNX-side service process. Here, the program interacts with the TUner chip, which eventually send the received radio data to the Audio module for playback through the speakers.
+
+### Robot Development in Hangzhou ShenHao Technology Company Limted
+1. At Hangzhou ShenHao Technology Company Limted，I work on robot-related development using C/C++. Specifically, I develop backend programs to control robots under the Ubuntu operating system. 
+2. When this program starts, it first read task and waypoint information from the databse. Then it controls the robot to move to specified positions and perform specific tasks, such as taking photos, measuring temperatures, and detecting gas leaks. The results of tasks are saved back to the database. Finally, the robot proceeds to the next task point until all tasks are completed, returning to its initial position for rechargin and awaiting the next automatic or manual activation.
+
+### Office Software Development in Kylin Software Company
+1. In Kylin Software Company, The projects that our department is reponsible for is an office software called Zhongbiaopuhua Office Software. This software is based on an open-source software called LibreOffice and has undergone secondary development. We are using C++11 to migrate the functionality from the old version to the new version currently under development.
+2. As a develpoer working on text styles within documents, I am responsible for handing various aspects of text, such as underlining, color, and size.
 
 ### Introduce the most impressive difficulties encountered in the work and how to solve them
 1. Last year, while developing a radio chip, I encountered a memorable challenge. The firmware of this chip had been modified by colleagues at headquarters. However, in a situation where the chip manufacturer did not provide support and the assistance from headquarters was limited, I needed to determine the necessary initialization steps for the chip after power-up. This included indetifying which parameters to initialize and their order. Unfortunately, none of my colleagues in China had relevant experiences, so I practically started researching this issue from scratch.
@@ -48,16 +49,14 @@ After graduating, I worked at Hangzhou ShenHao Technology Company Limited where 
 ## Reasons for resignation
 
 ### Reasons for the first two departures
-1. The first time I left was because the salary was too low at that time. After deducting the expenses of renting and eating, I had almost no savings after working for a year. So I can only change to a job that can make my life more stable.
+1. The first time I left was because the salary was too low to support myself at that time. So I need to change a job.
 2. The second time I left was just because the department leader wanted me to do front-end work, such as web development. I was not very interested in it, so I negotiated to leave.
 
 ### Why did you change so many city jobs
-1. I always think that a person has something he should do at every stage of his life. For example, one can see the world more at the age of 24.  and  consider his future career plan at the age of 27, as well as at the age of 30, should make more plans for his relatives, such as parents, future partners, and even children.
-2. So I was 24 years old with great enthusiasm to expand Beijing, 26 came to Suzhou to plan my career, and now nearly 30, want to balance the weight of the family and work, which means that I want to spend more time with my grandparents. If I choose a job in Heifei, it only takes me 2 hours to back to home.
+1. At every stage in one's life, there are different things one should do, of course, it's just suggested, not must. For instance, when I was 24 years, I came to Beijing to see the world more, because I have great enthuisasm to explore this world. and when I turned 26, I need to plan to my career, so I went back to Suzhou and joined Aptiv, because it only takes about 3 hours to get home. 
 
 ### The reason for this job change
-1. I want to spend as much time with my grandparents in my hometown, so I want to go to Hefei.
-2. Volkswagen is one of the best car companies in the world, and of course it is a company that many people want to enter, including me.
+1. Now, nearly 30 years old, there is a better opportunity that help me balance the weight of my family and work, it's VolkWagen in Heifei. first you know, if I have a car, I can only spend 2 hours back to home to see my grandparents, and secondly, as one of the best companies in the world, VolkWagen have more good chances and excellent employees. I am very willing to work with excellent people.
 
 ## What is your career plan
 1. In the manufacturing industry, especially the automobile industry, software development is my deep direction, because it is very fulfilling to see that my code can run on the road.
