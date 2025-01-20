@@ -1,0 +1,1 @@
+# VMware set up the shared folder between windows and ubuntu
